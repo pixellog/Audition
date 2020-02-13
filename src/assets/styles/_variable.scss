@@ -1,0 +1,104 @@
+$primary: #111b5c;
+$purple: #7042e6;
+$info: #34a6e0;
+$light: #fff;
+$success: #37dbbe;
+$danger: #b22178;
+$text-muted: #b4b8bf;
+$enable-rounded: false;
+$input-bg: transparentize(rgba(0, 0, 0, 0), 0);
+$input-border-radius: 0;
+$modal-backdrop-opacity: .6;
+$font-family-base: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
+@import '~bootstrap/scss/bootstrap';
+@import '~bootstrap-vue/src/index';
+//@import '~prismjs/themes/prism-okaidia';
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+
+$bg-base: #f2f5fa;
+
+$widths: (
+        10 : 10%,
+        15 : 15%,
+        20 : 20%,
+        30 : 30%,
+        33 : 33.33%,
+        35 : 35%,
+        40 : 40%,
+        60 : 60%,
+        70 : 70%,
+        80 : 80%,
+        90 : 90%,
+);
+
+@each $key, $val in $widths {
+  .w-#{$key} {
+    width: $val !important;
+  }
+}
+
+@mixin icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+  font-size: 1px;
+  line-height: inherit;
+  margin-right: 4px;
+}
+
+html, body {
+  height: 100vh;
+}
+
+body {
+  color: #2d2d2d;
+  background-color: #f0f0f0;
+}
+
+.bg-muted {
+  background-color: #eff0f0;
+}
+
+.fz-3 {
+  font-size: 1.5rem;
+}
+
+.btn-link {
+  color: #2d2d2d;
+}
+
+.bg-input {
+  background-color: rgb(241, 242, 242);
+}
+
+.rounded {
+  border-radius: 1rem !important;
+}
+
+.bg {
+  background: url(../images/bg.jpg) 50% / cover no-repeat;
+}
+
+.vh-100 {
+  min-height: 100vh;
+}
+
+label.required {
+  &::after {
+    content: '*';
+    color: #f00;
+  }
+}
+
+.btn-danger {
+  border: 0;
+  background-image: linear-gradient(90deg, rgb(228, 45, 109) 0%, rgb(151, 31, 160) 100%);
+}
