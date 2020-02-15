@@ -1,11 +1,11 @@
 <template>
-    <div class="bg-muted p-5 vh-100">
+    <div class="pages bg-muted">
 
-        <div class="text-center">
-            <img src="../assets/images/logo@2x.png" alt="" class="w-75">
+        <div class="logo mx-auto" style="margin: 60px 0 63px;">
+            <div class="sr-only">Open Audiiton</div>
         </div>
 
-        <b-form class="mt-5">
+        <b-form class="w-75 mx-auto">
 
             <b-row class="bg-white rounded">
                 <label for="" class="col-4 col-form-label">이메일</label>
@@ -37,19 +37,19 @@
                 <b-input type="password" class="col-7 border-0"/>
             </b-row>
 
-            <b-form-checkbox-group stacked v-model="terms" :options="termsOptions" class="mt-2"/>
+            <b-form-checkbox-group stacked v-model="terms" :options="termsOptions" class="mt-3 ml-3"/>
 
             <b-row class="mt-4">
                 <label for="" class="col-auto col-form-label">성별</label>
                 <b-form-radio-group v-model="gender" :options="genderOptions" class="mt-2 col"/>
             </b-row>
 
-            <b-row>
+            <b-row class="mt-2">
                 <b-input class="col flex-grow-1 mr-3 bg-white rounded border-0" placeholder="성"/>
                 <b-input class="col-6 bg-white rounded border-0" placeholder="이름"/>
             </b-row>
 
-            <ul class="list-unstyled">
+            <ul class="list-unstyled mt-3">
                 <li>* 투표의 공정성을 위해 실명으로만 가입이 가능합니다.</li>
                 <li>*오디션 참여자 외에는 닉네임만 노출됩니다.</li>
             </ul>
@@ -61,7 +61,7 @@
                         <b-input class="col-8 border-0 text-right" placeholder="닉네임을 입력해주세요"/>
                     </b-row>
                 </div>
-                <b-button variant="dark" class="col-2 rounded">중복확인</b-button>
+                <b-button variant="dark" class="col-auto rounded">중복확인</b-button>
             </b-row>
 
             <b-row class="bg-white rounded mt-3">

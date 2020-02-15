@@ -1,0 +1,65 @@
+// btn
+.btn {
+  height:64px;
+  font-size: 20px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.btn-link {
+  color: #2d2d2d;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.btn-lg {
+  min-height: 74px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.btn-xl {
+  min-height: 101px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.btn-light {
+  color: #bd2686;
+}
+
+.btn-danger {
+  border: 0;
+  background-image: linear-gradient(90deg, rgb(228, 45, 109) 0%, rgb(151, 31, 160) 100%);
+}
+
+// form
+.rounded {
+  border-radius: 1.5rem !important;
+}
+
+.form-control {
+  min-height: 65px;
+  &::placeholder {
+    font-size: 20px;
+    color: #8a8a8a;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+  }
+}
+
+.col-form-label {
+  //line-height: 2.5;
+  padding-left: 2rem;
+}
+
+.rounded .col-form-label {
+  line-height: 2.5;
+}
+
+.custom-select {
+  font-size: 20px;
+  line-height: 2.5;
+  padding-left: 1.8rem;
+}
+

@@ -1,32 +1,13 @@
 <template>
     <div id="app">
-        <div class="row no-gutters">
-            <div class="col">
-                <Intro/>
-            </div>
-            <div class="col">
-                <Login/>
-            </div>
-            <div class="col">
-                <Join/>
-            </div>
-            <div class="col">
-                <IntroJoin/>
-            </div>
-            <div class="col">
-                <Profile/>
-            </div>
-            <div class="col-12"></div>
-            <div class="col">
-                <Main/>
-            </div>
-            <div class="col">
-                <List/>
-            </div>
-            <div class="col">
-                <ListDetail/>
-            </div>
-        </div>
+        <Intro/>
+        <Login/>
+        <Join/>
+        <IntroJoin/>
+        <Profile/>
+        <Main/>
+        <List/>
+        <ListDetail/>
     </div>
 </template>
 
