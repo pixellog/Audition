@@ -12,7 +12,6 @@
 </template>
 
 <script>
-    // import HelloWorld from './components/HelloWorld.vue'
     import Main from "@/pages/Main.vue";
     import Profile from "@/pages/profile";
     import Login from "@/pages/Login";
@@ -25,15 +24,14 @@
     export default {
         name: 'App',
         components: {
-            IntroJoin,
             Intro,
+            IntroJoin,
             ListDetail,
             List,
             Join,
             Login,
             Profile,
             Main,
-            // HelloWorld
         }
     }
 </script>

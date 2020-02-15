@@ -1,27 +1,29 @@
 .pages {
   min-height: 100vh;
   overflow: hidden;
-  padding-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .bg {
-  background: url(../images/bg.jpg) 50% / cover no-repeat;
+  background: url(../images/bg.jpg) 50% 0 / cover no-repeat;
 }
 
 .logo {
-  width: 356px;
-  height: 66px;
-  background: url(../images/logo@2x.png) 50%/contain no-repeat;
+  width: 70vw;
+  height: 12.7vw;
+  background: url(../images/logo@2x.png) 50%/cover no-repeat;
 }
 
 .logo-white {
-  width: 335px;
-  height: 226px;
-  background: url(../images/logo-white@2x.png) 50%/contain no-repeat;
+  width: 70vw;
+  height: 47.4vw;
+  background: url(../images/logo-white@2x.png) 50%/cover no-repeat;
 }
 
 .logo-kr {
-  width: 248px;
-  height: 223px;
-  background: url(../images/logo-kr@2x.png) 50%/contain no-repeat;
+  width: 60vw;
+  height: 53vw;
+  background: url(../images/logo-kr@2x.png) 50%/cover no-repeat;
 }

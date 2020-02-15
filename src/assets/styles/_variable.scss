@@ -33,36 +33,16 @@ $widths: (
   }
 }
 
-//
-//@mixin icons {
-//  font-family: 'Material Icons';
-//  font-weight: normal;
-//  font-style: normal;
-//  letter-spacing: normal;
-//  text-transform: none;
-//  display: inline-block;
-//  white-space: nowrap;
-//  word-wrap: normal;
-//  direction: ltr;
-//  -webkit-font-feature-settings: 'liga';
-//  -webkit-font-smoothing: antialiased;
-//  font-size: 1px;
-//  line-height: inherit;
-//  margin-right: 4px;
-//}
-
 html, body {
-  height: 100vh;
+  height:100%;
 }
 
 body {
-  font-size: 20px;
   color: #373737;
   background-color: #f0f0f0;
 }
 
 h5 {
-  font-size: 22px;
   font-weight: bold
 }
 
@@ -70,23 +50,6 @@ h5 {
   background-color: #eff0f0;
 }
 
-.fz-3 {
-  font-size: 1.5rem;
-}
-
-
-
-
-.vh-100 {
-  min-height: 100vh;
-}
-
-label.required {
-  &::after {
-    content: '*';
-    color: #f00;
-  }
-}
 
 .bg-black-50 {
   background-color: #dcdbdb;

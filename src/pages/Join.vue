@@ -1,13 +1,14 @@
 <template>
     <div class="pages bg-muted">
 
-        <div class="logo mx-auto" style="margin: 60px 0 63px;">
-            <div class="sr-only">Open Audiiton</div>
-        </div>
 
-        <b-form class="w-75 mx-auto">
+        <b-form class="w-75 my-5">
 
-            <b-row class="bg-white rounded">
+            <div class="logo mx-auto">
+                <div class="sr-only">Open Audiiton</div>
+            </div>
+
+            <b-row class="bg-white rounded mt-5">
                 <label for="" class="col-4 col-form-label">이메일</label>
                 <b-input class="col-8 border-0"/>
             </b-row>
@@ -18,29 +19,29 @@
             </ul>
 
             <b-row class="mt-3">
-                <b-button variant="dark" size="lg" pill block>이메일 인증하기</b-button>
+                <b-button variant="dark" pill block>이메일 인증하기</b-button>
             </b-row>
 
 
             <b-row class="bg-white rounded mt-3">
-                <label for="" class="col-5 col-form-label">인증번호</label>
-                <b-input class="col-7 border-0 text-right" placeholder="이메일로 온 인증번호를 적어주세요"/>
+                <label for="" class="col-auto col-form-label">인증번호</label>
+                <b-input class="col border-0 text-right" placeholder="이메일로 온 인증번호를 적어주세요"/>
             </b-row>
 
             <b-row class="bg-white rounded mt-3">
-                <label for="" class="col-5 col-form-label">비밀번호</label>
-                <b-input type="password" class="col-7 border-0"/>
+                <label for="" class="col-auto col-form-label">비밀번호</label>
+                <b-input type="password" class="col border-0"/>
             </b-row>
 
             <b-row class="bg-white rounded mt-3">
-                <label for="" class="col-5 col-form-label">비밀번호 확인</label>
-                <b-input type="password" class="col-7 border-0"/>
+                <label for="" class="col-auto col-form-label">비밀번호 확인</label>
+                <b-input type="password" class="col border-0"/>
             </b-row>
 
             <b-form-checkbox-group stacked v-model="terms" :options="termsOptions" class="mt-3 ml-3"/>
 
             <b-row class="mt-4">
-                <label for="" class="col-auto col-form-label">성별</label>
+                <label for="" class="col-auto col-form-label font-weight-bold">성별</label>
                 <b-form-radio-group v-model="gender" :options="genderOptions" class="mt-2 col"/>
             </b-row>
 
@@ -55,22 +56,22 @@
             </ul>
 
             <b-row class="mt-3">
-                <div class="col-auto flex-grow-1 mr-3 bg-white rounded">
+                <div class="col bg-white rounded mr-2">
                     <b-row>
-                        <label for="" class="col-4 col-form-label">닉네임</label>
-                        <b-input class="col-8 border-0 text-right" placeholder="닉네임을 입력해주세요"/>
+                        <label for="" class="col-auto col-form-label">닉네임</label>
+                        <b-input class="col border-0 text-right" placeholder="닉네임을 입력해주세요"/>
                     </b-row>
                 </div>
                 <b-button variant="dark" class="col-auto rounded">중복확인</b-button>
             </b-row>
 
             <b-row class="bg-white rounded mt-3">
-                <b-form-select v-model="county" :options="countyOptions" class="col-4 border-0"/>
+                <b-form-select v-model="county" :options="countyOptions" class="col-4 col-form-label border-0"/>
                 <b-input placeholder="연락처를 적어주세요" class="col-8 border-0 text-right"></b-input>
             </b-row>
 
             <div class="text-center">
-                <b-button variant="danger" size="lg" pill class="mt-5 w-75">회원가입하기</b-button>
+                <b-button variant="danger" size="lg" pill class="mt-5 w-90">회원가입하기</b-button>
             </div>
 
         </b-form>
@@ -87,7 +88,7 @@
             return {
                 terms: 0,
                 gender: 0,
-                county:0,
+                county: 0,
                 termsOptions: Object.assign({}, ['서비스 이용약관 동의', '개인정보보호정책 동의']),
                 genderOptions: Object.assign({}, ['남', '여']),
                 countyOptions: Object.assign({}, ['국가번호']),
