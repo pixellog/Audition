@@ -1,26 +1,20 @@
 // btn
 .btn {
   min-height:3.3rem;
-  //font-size: 20px;
-  //padding-left: 1.5rem;
-  //padding-right: 1.5rem;
 }
 
 .btn-link {
   color: #2d2d2d;
-  //font-size: 22px;
   font-weight: 600;
 }
 
 .btn-lg {
   min-height: 74px;
-  //font-size: 22px;
   font-size: 1.5rem;
   font-weight: 600;
 }
 
 .btn-xl {
-  //min-height: 101px;
   padding-top: .5rem;
   padding-bottom: .5rem;
   font-size: 2rem;
@@ -44,20 +38,11 @@
 .form-control {
   min-height: 3.3rem;
   &::placeholder {
-    //font-size: 20px;
     color: #8a8a8a;
-    padding-left: 1.2rem;
-    padding-right: 1.2rem;
   }
-}
-
-.col-form-label {
 }
 
 .rounded .col-form-label {
   line-height: 2.5;
-}
-
-.custom-select {
 }
 

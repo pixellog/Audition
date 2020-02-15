@@ -13,7 +13,7 @@
 
 <script>
     import Main from "@/pages/Main.vue";
-    import Profile from "@/pages/profile";
+    import Profile from "@/pages/Profile";
     import Login from "@/pages/Login";
     import Join from "@/pages/Join";
     import List from "@/pages/List";

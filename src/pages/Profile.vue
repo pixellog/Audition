@@ -6,7 +6,7 @@
                 <div class="sr-only">Open Audiiton</div>
             </div>
 
-            <div class="rounded-circle bg-black-50 mx-auto position-relative" style="width: 200px;height: 200px; border:4px solid #fff; margin-top: 6rem;">
+            <div class="rounded-circle bg-black-50 mx-auto position-relative" style="width: 200px;height: 200px; border:4px solid #fff; margin-top: 20vh;">
                 <b-button variant="link" class="position-absolute" style="right: -20px;bottom: 4px;"><img src="../assets/images/camera@2x.png" alt="" style="width: 63px;"></b-button>
             </div>
 
