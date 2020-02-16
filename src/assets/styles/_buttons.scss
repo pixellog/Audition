@@ -1,17 +1,15 @@
 // btn
-.btn {
+.btn-md {
   min-height:3.3rem;
 }
 
 .btn-link {
-  color: #2d2d2d;
   font-weight: 600;
 }
 
 .btn-lg {
-  min-height: 74px;
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 1.3rem;
+  line-height: 1.8;
 }
 
 .btn-xl {
@@ -21,14 +19,20 @@
   font-weight: 600;
 }
 
-.btn-light {
-  color: #bd2686;
+.btn-outline-secondary {
+  border-color: #939598;
+}
+
+.btn-pink {
+  background-color: #d85b87;
+  color: #fff;
 }
 
 .btn-danger {
   border: 0;
   background-image: linear-gradient(90deg, rgb(228, 45, 109) 0%, rgb(151, 31, 160) 100%);
 }
+
 
 // form
 .rounded {

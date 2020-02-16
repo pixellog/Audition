@@ -1,10 +1,10 @@
 <template>
     <div id="app">
-        <Intro/>
-        <Login/>
-        <Join/>
-        <IntroJoin/>
-        <Profile/>
+        <Intro class="d-none"/>
+        <Login class="d-none"/>
+        <Join class="d-none"/>
+        <IntroJoin class="d-none"/>
+        <Profile class="d-none"/>
         <Main/>
         <List/>
         <ListDetail/>

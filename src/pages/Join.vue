@@ -46,7 +46,7 @@
             </b-row>
 
             <b-row class="mt-2">
-                <b-input class="col flex-grow-1 mr-3 bg-white rounded border-0" placeholder="성"/>
+                <b-input class="col flex-grow-1 mr-2 bg-white rounded border-0" placeholder="성"/>
                 <b-input class="col-6 bg-white rounded border-0" placeholder="이름"/>
             </b-row>
 

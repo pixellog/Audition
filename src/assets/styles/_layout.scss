@@ -16,6 +16,12 @@
   background: url(../images/logo@2x.png) 50%/cover no-repeat;
 }
 
+.logo-sm {
+  width: 42vw;
+  height: 7.48vw;
+  background: url(../images/logo@2x.png) 50%/cover no-repeat;
+}
+
 .logo-white {
   width: 70vw;
   height: 47.4vw;
@@ -26,4 +32,21 @@
   width: 60vw;
   height: 53vw;
   background: url(../images/logo-kr@2x.png) 50%/cover no-repeat;
+}
+
+
+.ing-audition {
+
+  background-image: linear-gradient(180deg, rgb(176, 48, 93) 0%, rgb(116, 37, 132) 100%);
+}
+
+.ranking {
+  background-color: $text-muted;
+}
+
+.heart {
+  background-color: $text-muted;
+  .btn {
+    min-height: 80px;
+  }
 }
