@@ -1,5 +1,5 @@
 <template>
-    <div id="app">
+    <div id="app" class="overflow-hidden">
         <Intro class="d-none"/>
         <Login class="d-none"/>
         <Join class="d-none"/>

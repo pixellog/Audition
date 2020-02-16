@@ -1,12 +1,12 @@
 <template>
     <div class="ing-audition text-white py-5 px-4">
 
-        <b-row class="align-items-start">
+        <b-row class="align-items-center">
             <div class="col-auto">
                 <h2 class="mb-0 font-weight-bold">진행중 오디션</h2>
                 <div>최근 진행중인 오디션</div>
             </div>
-            <b-button variant="link" pill class="ml-auto">
+            <b-button variant="link" pill class="ml-auto p-0">
                 <img src="../assets/images/btn-plus-white@3x.png" class="x2" alt="">
             </b-button>
         </b-row>
@@ -21,7 +21,6 @@
                 id="carousel-1"
                 v-model="slide"
                 :interval="4000"
-                controls
                 img-width="1024"
                 img-height="480"
                 @sliding-start="onSlideStart"
@@ -30,14 +29,15 @@
 
             <b-carousel-slide v-for="i in 3" v-bind:key="i">
                 <template v-slot:img>
-                    <b-card class="rounded" body-class="p-2">
+                    <b-card class="rounded border-0" body-class="p-2">
                         <img class="d-block img-fluid w-100 rounded"
                              src="../assets/images/audition-1@3x.png"
                              alt="">
+                        <div class="flag ml-4">~12.7</div>
                         <b-row no-gutters class="mt-4 mb-3">
-                            <b-button size="lg" pill variant="outline-secondary" class="px-3 flex-grow-1">공식홈</b-button>
-                            <b-button size="lg" pill variant="outline-secondary" class="px-3 flex-grow-1 mx-2">오디션정보</b-button>
-                            <b-button size="lg" pill variant="outline-secondary" class="px-3 flex-grow-1">공유하기</b-button>
+                            <b-button size="lg" pill variant="outline-secondary" class="px-3 my-1 flex-grow-1">공식홈</b-button>
+                            <b-button size="lg" pill variant="outline-secondary" class="px-3 my-1 flex-grow-1 mx-2">오디션정보</b-button>
+                            <b-button size="lg" pill variant="outline-secondary" class="px-3 my-1 flex-grow-1">공유하기</b-button>
                         </b-row>
                     </b-card>
                 </template>

@@ -8,7 +8,7 @@
             <b-row class="mt-3">
                 <div class="col-4 px-3" v-for="i in report" v-bind:key="i">
                     <img src="../assets/images/report-1@3x.png" alt="" class="w-100">
-                    <div class="text-truncate text-third h5 font-weight-normal mt-3" style="width: 20vw;">{{i}}</div>
+                    <div class="text-truncate text-third h5 font-weight-normal mt-3 text-center" style="width: 20vw;">{{i}}</div>
                 </div>
             </b-row>
         </b-card>
