@@ -1,18 +1,14 @@
 <template>
     <div class="ing-audition text-white py-5 px-4">
 
-        <b-row class="align-items-center">
-            <div class="col-auto">
-                <h2 class="mb-0 font-weight-bold">진행중 오디션</h2>
-                <div>최근 진행중인 오디션</div>
-            </div>
-
+        <h2 class="d-flex align-items-center font-weight-bold">
+            <div>진행중 오디션<small class="d-block h6">최근 진행중인 오디션</small></div>
             <b-button variant="outline-light" size="xl" pill class="ml-auto btn-icon">
                 <b-icon icon="plus"/>
             </b-button>
-        </b-row>
+        </h2>
 
-        <b-row no-gutters class="flex-nowrap mt-5">
+        <b-row no-gutters class="flex-nowrap mt-4">
             <b-button size="lg" variant="pink" class="col-auto px-4 mr-2" pill v-for="i in category" v-bind:key="i">{{i}}</b-button>
         </b-row>
 
