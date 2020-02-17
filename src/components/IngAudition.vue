@@ -6,8 +6,9 @@
                 <h2 class="mb-0 font-weight-bold">진행중 오디션</h2>
                 <div>최근 진행중인 오디션</div>
             </div>
-            <b-button variant="link" pill class="ml-auto p-0">
-                <img src="../assets/images/btn-plus-white@3x.png" class="x2" alt="">
+
+            <b-button variant="outline-light" size="xl" pill class="ml-auto btn-icon">
+                <b-icon icon="plus"/>
             </b-button>
         </b-row>
 
@@ -63,12 +64,12 @@
             }
         },
         methods: {
-            // onSlideStart(slide) {
-            //   this.sliding = true
-            // },
-            // onSlideEnd(slide) {
-            //   this.sliding = false
-            // }
+            onSlideStart() {
+                this.sliding = true
+            },
+            onSlideEnd() {
+                this.sliding = false
+            }
         }
     }
 </script>

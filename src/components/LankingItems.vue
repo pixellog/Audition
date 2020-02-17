@@ -5,9 +5,9 @@
             <div class="flag ml-4">{{index+1}}위</div>
             <h4 class="d-flex align-items-center mt-3 mb-0">
                 <strong>오동백</strong>
-                <b-button variant="link text-third p-0" class="ml-auto">보기+</b-button>
+                <b-button variant="link p-0" class="ml-auto">보기<b-icon icon="plus"/></b-button>
             </h4>
-            <div><img class="x2" src="../assets/images/ic-heart@3x.png" alt=""><span class="h5 text-primary ml-2">5,354,555</span></div>
+            <div><img class="x2" src="../assets/images/ic-heart@3x.png" alt=""><span class="h5 text-danger ml-2">5,354,555</span></div>
             <div><img class="x2" src="../assets/images/ic-won@3x.png" alt=""><span class="text-warning ml-2">5,354,555</span></div>
         </div>
     </b-row>

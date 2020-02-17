@@ -2,8 +2,8 @@
     <div class="ranking px-4 py-5">
 
         <h2 class="d-flex align-items-center font-weight-bold">실시간 랭킹
-            <b-button variant="link" class="ml-auto p-0">
-                <img src="../assets/images/btn-plus@3x.png" class="x2" alt="">
+            <b-button variant="outline-secondary" size="xl" pill class="ml-auto btn-icon">
+                <b-icon icon="plus"/>
             </b-button>
         </h2>
 

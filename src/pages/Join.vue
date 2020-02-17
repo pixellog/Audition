@@ -38,7 +38,7 @@
                 <b-input type="password" class="col border-0"/>
             </b-row>
 
-            <b-form-checkbox-group stacked v-model="terms" :options="termsOptions" class="mt-3 ml-3"/>
+            <b-form-checkbox stacked v-model="terms" :options="termsOptions" class="mt-3 ml-3"/>
 
             <b-row class="mt-4">
                 <label for="" class="col-auto col-form-label font-weight-bold">성별</label>
