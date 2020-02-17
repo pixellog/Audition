@@ -1,14 +1,13 @@
 <template>
-    <div id="app" class="overflow-hidden">
-        <router-view/>
-        <Intro hidden/>
-        <Login hidden/>
-        <Join hidden/>
-        <IntroJoin hidden/>
-        <Profile hidden/>
-        <Main hidden/>
-        <List hidden/>
-        <ListDetail hidden/>
+    <div>
+        <Intro/>
+        <Login/>
+        <Join/>
+        <IntroJoin/>
+        <Profile/>
+        <Main/>
+        <List/>
+        <ListDetail/>
     </div>
 </template>
 
@@ -23,7 +22,7 @@
     import IntroJoin from "@/pages/IntroJoin";
 
     export default {
-        name: 'App',
+        name: 'Pub',
         components: {
             Intro,
             IntroJoin,

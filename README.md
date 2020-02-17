@@ -1,5 +1,9 @@
 # audition
 
+## Use Framework & Library
+1. BootstrapVue : https://bootstrap-vue.js.org/
+2. vue-slick-carousel : https://gs-shop.github.io/vue-slick-carousel/#/
+
 ## Project setup
 ```
 npm install

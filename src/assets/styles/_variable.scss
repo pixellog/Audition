@@ -1,12 +1,10 @@
 $primary: #9a9a9a;
 $secondary: #373737;
 $purple: #7042e6;
-$info: #34a6e0;
+$info: #4657f6;
 $light: #fff;
 $success: #37dbbe;
-//$danger: #b22178;
 $danger: #e42d6e;
-//$text-muted: #b4b8bf;
 $link : #9a9a9a;
 $text-muted: #f0f0f0;
 $input-bg: transparentize(rgba(0, 0, 0, 0), 0);
@@ -14,6 +12,7 @@ $modal-backdrop-opacity: .6;
 $font-family-base: "Noto Sans Korean", "Helvetica Neue", Helvetica, Arial, sans-serif;
 @import '~bootstrap/scss/bootstrap';
 @import '~bootstrap-vue/src/index';
+@import '~vue-slick-carousel/dist/vue-slick-carousel-theme.css';
 
 $bg-base: #f2f5fa;
 
@@ -90,4 +89,12 @@ h5 {
 .btn-icon {
   line-height: 1;
   padding: 0 !important;
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 24px 0 rgba(0, 0, 0, .6) !important;
+}
+
+.custom-control-label {
+  display: flex;
 }

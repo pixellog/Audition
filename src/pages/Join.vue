@@ -19,26 +19,32 @@
             </ul>
 
             <b-row class="mt-3">
-                <b-button variant="dark" pill block>이메일 인증하기</b-button>
+                <b-button variant="dark" class="py-3" pill block>이메일 인증하기</b-button>
             </b-row>
 
 
             <b-row class="bg-white rounded mt-3">
-                <label for="" class="col-auto col-form-label">인증번호</label>
+                <label for="" class="col-auto col-form-label pr-5">인증번호</label>
                 <b-input class="col border-0 text-right" placeholder="이메일로 온 인증번호를 적어주세요"/>
             </b-row>
 
             <b-row class="bg-white rounded mt-3">
-                <label for="" class="col-auto col-form-label">비밀번호</label>
-                <b-input type="password" class="col border-0"/>
+                <label for="" class="col-auto col-form-label pr-5">비밀번호</label>
+                <b-input type="password" class="col border-0 text-right"/>
             </b-row>
 
             <b-row class="bg-white rounded mt-3">
                 <label for="" class="col-auto col-form-label">비밀번호 확인</label>
-                <b-input type="password" class="col border-0"/>
+                <b-input type="password" class="col border-0 text-right"/>
             </b-row>
 
-            <b-form-checkbox stacked v-model="terms" :options="termsOptions" class="mt-3 ml-3"/>
+<!--            <b-form-checkbox-group stacked id="" v-model="terms" name="" class="mt-3" :options="termsOptions">-->
+            <b-form-checkbox-group stacked id="" v-model="terms" name="" class="mt-3">
+                <b-form-checkbox :value="index" v-for="(item,index) in termsOptions" v-bind:key="item">
+                    {{item}}
+                    <b-button variant="link" class="text-danger p-0 ml-auto" @click="isTerms">보기</b-button>
+                </b-form-checkbox>
+            </b-form-checkbox-group>
 
             <b-row class="mt-4">
                 <label for="" class="col-auto col-form-label font-weight-bold">성별</label>
@@ -71,7 +77,7 @@
             </b-row>
 
             <div class="text-center">
-                <b-button variant="danger" size="lg" pill class="mt-5 w-90">회원가입하기</b-button>
+                <b-button variant="danger" size="lg" pill class="mt-5 w-80">회원가입하기</b-button>
             </div>
 
         </b-form>
@@ -86,12 +92,17 @@
         },
         data() {
             return {
-                terms: 0,
+                terms: [],
                 gender: 0,
                 county: 0,
                 termsOptions: Object.assign({}, ['서비스 이용약관 동의', '개인정보보호정책 동의']),
                 genderOptions: Object.assign({}, ['남', '여']),
                 countyOptions: Object.assign({}, ['국가번호']),
+            }
+        },
+        methods: {
+            isTerms() {
+                //
             }
         }
     }
