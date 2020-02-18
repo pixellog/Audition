@@ -4,14 +4,16 @@ import NotFound from "@/pages/404.vue";
 import Join from "@/pages/Join";
 import IntroJoin from "@/pages/IntroJoin";
 import Intro from "@/pages/Intro";
-import Pub from "@/Pub";
+import Guide from "@/pages/Guide";
+import Profile from "@/pages/Profile";
 
 export default [
-  { name: 'main', title: '메인', path: '/', component: Main },
-  { name: 'login', title: '로그인', path: '/login', component: Login },
-  { name: 'join', title: '회원가입', path: '/join', component: Join },
-  { name: 'intro', title: '인트로', path: '/intro', component: Intro },
-  { name: 'intro-join', title: '회원가입성공', path: '/introJoin', component: IntroJoin },
-  { name: 'not-found', title: '404', path: '**', component: NotFound },
-  { name: 'pub', title: 'publishing', path: '/pub', component: Pub },
+  { title: '메인', path: '/', component: Main },
+  { title: '로그인', path: '/login', component: Login },
+  { title: '회원가입', path: '/join', component: Join },
+  { title: '인트로', path: '/intro', component: Intro },
+  { title: '프로필', path: '/profile', component: Profile },
+  { title: '회원가입성공', path: '/intro/join', component: IntroJoin },
+  { title: '가이드', path: '/guide', component: Guide },
+  { title: '404', path: '**', component: NotFound },
 ];

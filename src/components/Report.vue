@@ -1,11 +1,11 @@
 <template>
     <div class="bg-muted pb-5 px-4">
         <b-card class="report rounded border-0 shadow px-3 py-2">
-            <h4 class="d-flex align-items-center">REPORT
-                <b-button variant="link" size="lg" class="ml-auto btn-icon">
+            <h5 class="d-flex align-items-center">REPORT
+                <b-button variant="link" class="ml-auto btn-icon">
                     <b-icon icon="chevron-right" scale="1.2" variant="secondary"/>
                 </b-button>
-            </h4>
+            </h5>
 
             <b-row class="mt-3">
                 <div class="col-4 px-2" v-for="i in report" v-bind:key="i">

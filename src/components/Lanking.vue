@@ -1,15 +1,15 @@
 <template>
     <div class="ranking py-5 px-4">
 
-        <h2 class="d-flex align-items-center font-weight-bold">실시간 랭킹
-            <b-button variant="outline-secondary" size="xl" pill class="ml-auto btn-icon">
-                <b-icon icon="plus"/>
+        <h3 class="d-flex align-items-center font-weight-bold">실시간 랭킹
+            <b-button variant="outline-secondary" pill class="ml-auto btn-icon">
+                <b-icon icon="plus" scale="2" class="m-2 text-primary"/>
             </b-button>
-        </h2>
+        </h3>
 
-        <b-tabs class="mt-4" nav-class="border-0" pills fill active-nav-item-class="btn-danger">
+        <b-tabs class="mt-3" nav-class="border-0" pills fill active-nav-item-class="btn-danger">
             <b-tab v-for="(i,index) in category" v-bind:key="i" :title="i" :active="!index"
-                   title-link-class="btn btn-outline-secondary rounded-pill mx-1 btn-lg"
+                   title-link-class="btn btn-outline-secondary rounded-pill mx-1"
             >
                 <div class="scrolling-wrapper mt-4" style="margin-left: -30px; margin-right: -30px; padding-left: 30px; padding-right: 30px;">
                     <div class="w-40 d-inline-block px-2 position-relative" v-for="(item,index) in 5" v-bind:key="item">
