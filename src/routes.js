@@ -6,9 +6,11 @@ import IntroJoin from "@/pages/IntroJoin";
 import Intro from "@/pages/Intro";
 import Guide from "@/pages/Guide";
 import Profile from "@/pages/Profile";
+import Audition from "@/pages/Audition";
 
 export default [
   { title: '메인', path: '/', component: Main },
+  { title: '오디션', path: '/audition', component: Audition },
   { title: '로그인', path: '/login', component: Login },
   { title: '회원가입', path: '/join', component: Join },
   { title: '인트로', path: '/intro', component: Intro },
