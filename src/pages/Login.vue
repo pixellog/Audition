@@ -22,9 +22,10 @@
             </b-row>
 
             <b-row class="mt-2 align-items-center">
-                <b-button variant="link">아이디 찾기</b-button>
-                <b-button variant="link">비밀번호 찾기</b-button>
-                <b-button variant="link" class="ml-auto">회원가입</b-button>
+                <b-button variant="link" class="text-secondary">아이디 찾기</b-button>
+                <b-icon icon="dash" rotate="90" scale="2"></b-icon>
+                <b-button variant="link" class="text-secondary">비밀번호 찾기</b-button>
+                <b-button variant="link" class="ml-auto text-secondary">회원가입</b-button>
             </b-row>
 
             <div class="text-center" style="margin-top: 5rem;">
