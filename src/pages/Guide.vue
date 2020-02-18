@@ -12,7 +12,7 @@
                 <li><router-link to="/">main</router-link></li>
                 <li><router-link to="/login">login</router-link></li>
                 <li><router-link to="/intro">intro</router-link></li>
-                <li><router-link to="/intro-join">intro-join</router-link></li>
+                <li><router-link to="/intro/join">intro join</router-link></li>
                 <li><router-link to="/join">join</router-link></li>
                 <li><router-link to="/profile">profile</router-link></li>
             </ol>
