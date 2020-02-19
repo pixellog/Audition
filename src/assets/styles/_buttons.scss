@@ -28,7 +28,7 @@
   color: #fff;
 }
 
-.btn-danger {
+.bg-gradient {
   border: 0;
   background-image: linear-gradient(90deg, rgb(228, 45, 109) 0%, rgb(151, 31, 160) 100%);
 }
@@ -37,6 +37,10 @@
 // form
 .rounded {
   border-radius: 1.2rem !important;
+}
+
+.rounded-lg {
+  border-radius: 2rem !important;
 }
 
 .form-control {
@@ -50,3 +54,21 @@
   line-height: 2.5;
 }
 
+// radio
+.custom-control-input:checked ~ .custom-control-label::before {
+  border-color: #bebebe;
+  background-color: #fff;
+}
+
+.custom-radio .custom-control-input:checked ~ .custom-control-label::after {
+  background-image: none;
+  background-color: $danger;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  margin: 4px;
+}
+
+.custom-radio .custom-control-label::before {
+  background-color: #fff;
+}

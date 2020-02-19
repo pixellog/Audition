@@ -7,7 +7,7 @@
             </b-button>
         </h3>
 
-        <b-tabs class="mt-3" nav-class="border-0" pills fill active-nav-item-class="btn-danger">
+        <b-tabs class="mt-3" nav-class="border-0" pills fill active-nav-item-class="btn-danger bg-gradient">
             <b-tab v-for="(i,index) in category" v-bind:key="i" :title="i" :active="!index"
                    title-link-class="btn btn-outline-secondary rounded-pill mx-1"
             >
@@ -31,7 +31,7 @@
 
 <script>
     export default {
-        name: 'Lanking',
+        name: 'Ranking',
         data() {
             return {
                 category: ['#종합', '#남자', '#여자']

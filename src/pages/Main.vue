@@ -2,7 +2,7 @@
     <div>
         <Header/>
         <Audition/>
-        <Lanking/>
+        <Ranking/>
         <Report/>
         <Footer/>
     </div>
@@ -10,14 +10,14 @@
 
 <script>
     import Audition from "../components/Audition";
-    import Lanking from "../components/Lanking";
+    import Ranking from "../components/Ranking";
     import Header from "../components/Header";
     import Footer from "../components/Footer";
     import Report from "../components/Report";
 
     export default {
         name: 'Main',
-        components: {Report, Footer, Header, Lanking, Audition},
+        components: {Report, Footer, Header, Ranking, Audition},
         props: {
             msg: String
         },

@@ -7,10 +7,16 @@ import Intro from "@/pages/Intro";
 import Guide from "@/pages/Guide";
 import Profile from "@/pages/Profile";
 import Audition from "@/pages/Audition";
+import Ranking from "@/pages/Ranking";
+import Vote from "@/pages/Vote";
+import AuditionInfo from "@/pages/AuditionInfo";
 
 export default [
   { title: '메인', path: '/', component: Main },
   { title: '오디션', path: '/audition', component: Audition },
+  { title: '랭킹', path: '/ranking', component: Ranking },
+  { title: '투표', path: '/vote', component: Vote },
+  { title: '오디션정보', path: '/audition/info', component: AuditionInfo },
   { title: '로그인', path: '/login', component: Login },
   { title: '회원가입', path: '/join', component: Join },
   { title: '인트로', path: '/intro', component: Intro },
