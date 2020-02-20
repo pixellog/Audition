@@ -24,7 +24,7 @@
     import Search from "@/components/Search";
 
     export default {
-        name: 'Vote',
+        name: 'AuditionList',
         components: {Search, FooterButton, RankingList, Header, VoteMain},
     }
 </script>

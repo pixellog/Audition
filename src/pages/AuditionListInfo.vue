@@ -17,7 +17,7 @@
     import FooterButton from "@/components/FooterButton";
 
     export default {
-        name: 'AuditionInfo',
+        name: 'AuditionListInfo',
         components: {FooterButton, VoteMain, Header},
     }
 </script>

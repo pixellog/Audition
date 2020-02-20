@@ -1,7 +1,7 @@
 $primary: #9a9a9a;
 //$primary: #e42d6e;
 $secondary: #373737;
-$purple: #7042e6;
+$purple: #8e1ca6;
 $info: #4657f6;
 $light: #fff;
 $success: #37dbbe;
@@ -67,12 +67,36 @@ h5 {
   font-size: 15px;
 }
 
+.bg-gradient {
+  border: 0;
+  background-image: linear-gradient(90deg, rgb(228, 45, 109) 0%, rgb(151, 31, 160) 100%);
+}
+
+.bg-gradient-secondary {
+  border: 0;
+  background-image: linear-gradient(90deg, #fbe1ec 0%, #efdff3 100%);
+}
+
+
 .bg-black-50 {
   background-color: #dcdbdb;
 }
 
 .bg-muted {
   background-color: $text-muted;
+}
+
+.bg-purple {
+  background-color: $purple;
+}
+
+.btn-purple {
+  background-color: $purple;
+  color: #fff;
+}
+
+.text-purple {
+  color: $purple!important;
 }
 
 .text-third {

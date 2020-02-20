@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="p-5">
+        <div class="p-5 d-none">
             <h1>Publishing Guide</h1>
             <h2>사용 라이브러리</h2>
             <ol>
@@ -17,6 +17,10 @@
                 <li><router-link to="/profile">profile</router-link></li>
             </ol>
         </div>
+        <AuditionListDetail/>
+        <AuditionList/>
+        <AuditionListInfo/>
+        <Ranking/>
         <Intro/>
         <Login/>
         <Join/>
@@ -37,14 +41,22 @@
     import Intro from "@/pages/Intro";
     import IntroJoin from "@/pages/IntroJoin";
     import Profile from "@/pages/Profile";
+    import Ranking from "@/components/Ranking";
+    import AuditionList from "@/pages/AuditionList";
+    import AuditionListInfo from "@/pages/AuditionListInfo";
+    import AuditionListDetail from "@/pages/AuditionListDetail";
 
     export default {
         name: 'Guide',
         components: {
+            AuditionList,
+            AuditionListInfo,
+            AuditionListDetail,
+            Ranking,
             Intro,
             IntroJoin,
-            ListDetail,
             List,
+            ListDetail,
             Join,
             Login,
             Profile,
