@@ -14,7 +14,7 @@
 
 <script>
     import Main from "@/pages/Main.vue";
-    import Profile from "@/pages/Profile";
+    import Profile from "@/pages/ProfilePhoto";
     import Login from "@/pages/Login";
     import Join from "@/pages/Join";
     import List from "@/pages/List";

@@ -1,5 +1,5 @@
 <template>
-    <header>
+    <header class="bg-white overflow-hidden">
         <div class="logo-sm my-3 mx-auto">
             <div class="sr-only">Open Audition</div>
         </div>

@@ -13,6 +13,7 @@
   padding-bottom: 1rem;
   font-size: 2rem;
   font-weight: 600;
+
   &.btn-light {
     color: #bd2686;
   }
@@ -21,6 +22,11 @@
 .btn-outline-secondary {
   border-color: #939598;
   background-color: #fff;
+}
+
+.btn-primary {
+  background-color: $text-muted;
+  border-color: #cbcdce;
 }
 
 .btn-pink {
@@ -39,6 +45,7 @@
 
 .form-control {
   min-height: 3.3rem;
+
   &::placeholder {
     color: #8a8a8a;
   }

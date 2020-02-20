@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-muted pb-5 px-4">
+    <div class="bg-muted px-4">
         <b-card class="report rounded border-0 shadow px-3 py-2">
             <h5 class="d-flex align-items-center">REPORT
                 <b-button variant="link" class="ml-auto btn-icon">

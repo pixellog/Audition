@@ -27,8 +27,6 @@
         <IntroJoin/>
         <Profile/>
         <Main/>
-        <List/>
-        <ListDetail/>
     </div>
 </template>
 
@@ -36,11 +34,9 @@
     import Main from "@/pages/Main";
     import Login from "@/pages/Login";
     import Join from "@/pages/Join";
-    import List from "@/pages/List";
-    import ListDetail from "@/pages/ListDetail";
     import Intro from "@/pages/Intro";
     import IntroJoin from "@/pages/IntroJoin";
-    import Profile from "@/pages/Profile";
+    import Profile from "@/pages/ProfilePhoto";
     import Ranking from "@/components/Ranking";
     import AuditionList from "@/pages/AuditionList";
     import AuditionListInfo from "@/pages/AuditionListInfo";
@@ -55,8 +51,6 @@
             Ranking,
             Intro,
             IntroJoin,
-            List,
-            ListDetail,
             Join,
             Login,
             Profile,
