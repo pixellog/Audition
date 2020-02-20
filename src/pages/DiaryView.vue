@@ -1,5 +1,5 @@
 <template>
-    <div class="pb-5 bg-white">
+    <div class="pb-5 bg-white min-vh-100">
 
         <div class="p-3 border-bottom">
             <h6 class="mb-0">

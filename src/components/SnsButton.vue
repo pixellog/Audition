@@ -1,8 +1,8 @@
 <template>
     <div class="d-flex small align-items-center">
-        <b-icon icon="chat-fill" variant="light" class="bg-dark mr-2"></b-icon>
+        <b-icon icon="chat-fill" variant="light" scale="2" class="bg-dark mr-1 rounded-circle p-1"></b-icon>
         5
-        <b-button variant="outline-primary border-0 ml-3" size="sm" pill class="mr-2">
+        <b-button variant="link" size="sm" pill class="mr-2 text-secondary">
             <b-icon icon="chat"></b-icon>
             댓글달기
         </b-button>

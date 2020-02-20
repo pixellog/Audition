@@ -20,28 +20,39 @@ import Diary from "@/pages/Diary";
 import DiaryView from "@/pages/DiaryView";
 import DiaryWrite from "@/pages/DiaryWrite";
 import DiaryReply from "@/pages/DiaryReply";
+import Audition from "@/pages/Audition";
 
 export default [
   { title: '메인', path: '/', component: Main },
-  { title: '하트', path: '/heart', component: Heart },
-  { title: '오디션', path: '/audition', component: AuditionList },
-  { title: '오디션정보', path: '/audition/info', component: AuditionListInfo },
-  { title: '오디션상세', path: '/audition/detail', component: AuditionListDetail },
-  { title: '랭킹', path: '/ranking', component: Ranking },
-  { title: '로그인', path: '/login', component: Login },
+
   { title: '회원가입', path: '/join', component: Join },
+  { title: '회원가입 / 대표사진 등록', path: '/join/photo', component: ProfilePhoto },
   { title: '회원가입성공', path: '/intro/join', component: IntroJoin },
+  { title: '로그인', path: '/login', component: Login },
   { title: '인트로', path: '/intro', component: Intro },
-  { title: 'profile 메인', path: '/my/main', component: ProfileMain },
-  { title: 'profile', path: '/my/profile', component: Profile },
-  { title: 'profile 쓰기', path: '/my/profile/write', component: ProfileWrite },
-  { title: 'My Info', path: '/my/myinfo', component: MyInfo },
-  { title: '프로필사진', path: '/my/photo', component: ProfilePhoto },
-  { title: 'Diary', path: '/my/diary', component: Diary },
-  { title: 'Diary 상세', path: '/my/diary/view', component: DiaryView },
-  { title: 'Diary 댓ㄱ르', path: '/my/diary/reply', component: DiaryReply },
-  { title: 'Diary 쓰기', path: '/my/diary/write', component: DiaryWrite },
-  { title: 'Open Talk', path: '/my/opentalk', component: OpenTalk },
+
+  { title: '오디션 전체목록', path: '/audition', component: Audition },
+  { title: '오디션 상세정보', path: '/audition/info', component: AuditionListInfo },
+
+  { title: '오디션 전체목록', path: '/audition/entry', component: AuditionList },
+  { title: '오디션 후보목록', path: '/audition/entry/detail', component: AuditionListDetail },
+
+  { title: '하트', path: '/heart', component: Heart },
+  { title: '랭킹', path: '/ranking', component: Ranking },
+
+
+  { title: 'profile 메인', path: '/profile', component: ProfileMain },
+  { title: 'profile 등록', path: '/profile/regist', component: ProfileWrite },
+  { title: 'profile 정보', path: '/profile/view', component: Profile },
+
+  { title: 'My Info', path: '/myinfo', component: MyInfo },
+
+  { title: 'Diary', path: '/diary', component: Diary },
+  { title: 'Diary 상세', path: '/diary/view', component: DiaryView },
+  { title: 'Diary 댓글', path: '/diary/reply', component: DiaryReply },
+  { title: 'Diary 쓰기', path: '/diary/write', component: DiaryWrite },
+
+  { title: 'Open Talk', path: '/opentalk', component: OpenTalk },
   { title: '가이드', path: '/guide', component: Guide },
   { title: '404', path: '**', component: NotFound },
 ];

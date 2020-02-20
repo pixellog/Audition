@@ -1,59 +1,46 @@
 <template>
-    <div class="pb-5">
-        <Header/>
+    <div class="pb-5 bg-white min-vh-100">
 
-        <div class="bg-dark text-center py-3 position-relative">
-            <h6 class="text-white mb-0">Diary</h6>
-            <!-- https://bootstrap-vue.js.org/docs/components/form-checkbox -->
-            <b-form-checkbox value="0" name="" switch style="position:absolute; right: 15px; top: 25%;"></b-form-checkbox>
+        <div class="p-3 border-bottom">
+            <h6 class="mb-0">
+                <b-icon icon="chevron-left" scale="1.5" class="mr-2"></b-icon>
+                Create Post
+            </h6>
         </div>
 
-        <b-row class="px-4 pt-3 pb-1">
-            <b-button variant="link" class="text-dark font-weight-normal">선택 삭제</b-button>
-            <b-button variant="link" class="ml-auto text-dark">전체 삭제</b-button>
-        </b-row>
+        <div class="p-4">
 
-        <b-row no-gutters align-h="between" align-v="center" class="bg-white p-2">
-            <div class="col-4">
-                <b-button variant="outline-primary" size="sm" class="border-0">
-                    <b-icon icon="chevron-left" class="mr-1"></b-icon>
-                    2019.11
-                </b-button>
-            </div>
-            <div class="col-4">2019.12월</div>
-            <div class="col-4"></div>
-        </b-row>
+            <b-row>
+                <div class="col-auto" style="width: 70px;height: 70px;">
+                    <img src="../assets/images/thum-profile-sm.png" alt="" class="w-100 rounded-circle">
+                </div>
+                <b-textarea rows="5" placeholder="문구입력..." class="col border-0 p-0"></b-textarea>
+            </b-row>
 
-        <b-row class="p-3 mt-3 bg-white" v-for="i in 3" v-bind:key="i">
-            <div class="col-auto" style="width: 5rem;height: 5rem;">
-                <img src="../assets/images/thum-profile-sm.png" alt="" class="w-100 m-1 rounded-circle">
-            </div>
-            <div class="col">
+            <b-row no-gutters align-v="center mt-3">
                 <div>
-                    <div class="small">자존감 문제는 내게만 중요한 일이 아니었다. 불행하다며 나를 찾아오는 대다수는 자존감이 부족한 사람들이었다. - 자존감 수업中 ...</div>
-                    <div class="mt-2 d-flex" style="overflow-x: auto; margin-right: -15px;">
-                        <img src="../assets/images/thum-profile-sm.png" alt="" class="w-25 m-1" v-for="i in 6" v-bind:key="i">
-                    </div>
+                    <strong>이미지첨부</strong> <br>
+                    등록할 이미지를 첨부해주세요.
                 </div>
 
-                <div class="small my-2">2018.04.28</div>
+                <b-button variant="primary" size="sm" squared class="ml-auto border-0 px-3">첨부</b-button>
+            </b-row>
 
-                <SnsButton/>
-            </div>
-        </b-row>
+            <b-row no-gutters class="mt-3">
+                <strong>공개/비공개</strong>
+                <b-form-checkbox value="0" name="" switch class="ml-auto"></b-form-checkbox>
+            </b-row>
 
-        <FooterMenu/>
+            <b-button variant="danger" pill block class="mt-5 py-3 rounded">올리기</b-button>
+
+        </div>
+
     </div>
 </template>
 
 <script>
-    import Header from "@/components/Header";
-    import FooterMenu from "@/components/FooterMenu";
-    import SnsButton from "@/components/SnsButton";
-
     export default {
         name: 'DiaryWrite',
-        components: {SnsButton, FooterMenu, Header},
         data() {
             return {}
         }

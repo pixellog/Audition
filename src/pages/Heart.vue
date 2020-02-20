@@ -6,39 +6,33 @@
 
             <div class="bg-gradient text-center py-4 text-white">
                 <h5 class="mb-0">하트 충전소</h5>
-                <div class="h1 mb-0 font-weight-normal">
+                <div class="h2 mb-0 font-weight-normal">
                     <b-icon icon="heart-fill"></b-icon>
                     <span>96,271</span></div>
             </div>
 
-            <b-tabs nav-class="border-0" fill active-nav-item-class="btn-light text-danger bg-white border-0 font-weight-bold">
+            <b-tabs nav-class="border-0" fill active-nav-item-class="btn-light text-danger bg-white border-light font-weight-bold">
                 <b-tab v-for="(i,index) in category" v-bind:key="i" :title="i" :active="!index"
                        title-link-class="btn-light py-3 rounded-0"
                 >
 
-                    <div v-if="index==1">
-                        <table class="table bg-white my-3">
-                            <thead class="thead-dark text-center">
-                            <tr>
-                                <th>날짜</th>
-                                <th>내역</th>
-                                <th>변화</th>
-                                <th>총</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr v-for="i in 3" v-bind:key="i">
-                                <td>01.11</td>
-                                <td>하트 충전(광고) 적립</td>
-                                <td class="text-danger">+2,000</td>
-                                <td>2,000</td>
-                            </tr>
-                            </tbody>
-                        </table>
+                    <div v-if="index==0" class="py-3">
+                        <div v-for="i in 2" v-bind:key="i" class="mb-3">
+                            <img src="../assets/images/banner-md.png" alt="" class="w-100">
+                            <b-row no-gutters class="p-3 bg-white align-items-center">
+                                <div class="col">
+                                    <div class="text-truncate w-90 font-weight-bold">[상품찜]삼성노트북 xxxxxxxx 시리즈</div>
+                                    <div class="text-primary small">참여 : 클릭하여 광고에 참여</div>
+                                </div>
+                                <b-button variant="danger" style="border-radius: 10px;">
+                                    <b-icon icon="heart-fill" scale=".8"></b-icon>
+                                    5개
+                                </b-button>
+                            </b-row>
+                        </div>
                     </div>
 
-                    <div v-if="index==0" class="px-5 py-3">
-
+                    <div v-if="index==2" class="px-5 py-3">
                         <b-form>
                             <b-row>
                                 <div class="col-12 col-form-label font-weight-bold mt-3">선물할 닉네임 입력</div>
@@ -55,8 +49,32 @@
                                 하트 선물하기
                             </b-button>
                         </b-form>
-
                     </div>
+
+                    <div v-if="index==1">
+                        <table class="table bg-white my-3">
+                            <thead class="thead-dark text-center">
+                            <tr>
+                                <th>날짜</th>
+                                <th>내역</th>
+                                <th>변화</th>
+                                <th>총</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr v-for="i in 3" v-bind:key="i">
+                                <td>01.11</td>
+                                <td>하트 충전(광고) 적립</td>
+                                <td class="text-center">
+                                    <span class="text-danger">+1,245</span>
+                                    <span class="text-info">-10</span>
+                                </td>
+                                <td class="text-right">2,000</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
                 </b-tab>
             </b-tabs>
 
