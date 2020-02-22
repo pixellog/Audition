@@ -77,7 +77,7 @@
             </b-row>
 
             <div class="text-center">
-                <b-button variant="danger" size="lg" pill class="mt-5 w-80">회원가입하기</b-button>
+                <b-button variant="danger" size="lg" pill class="mt-5 w-80 bg-gradient">회원가입하기</b-button>
             </div>
 
         </b-form>

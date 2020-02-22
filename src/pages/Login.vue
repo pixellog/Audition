@@ -29,7 +29,7 @@
             </b-row>
 
             <div class="text-center" style="margin-top: 5rem;">
-                <b-button variant="danger" size="lg" pill class="w-75">로그인</b-button>
+                <b-button variant="danger" size="lg" pill class="w-75 bg-gradient">로그인</b-button>
             </div>
         </b-form>
 

@@ -15,7 +15,7 @@
                 </b-button>
             </div>
 
-            <b-button variant="danger" size="lg" pill block class="w-80 mx-auto mt-5">대표사진 등록</b-button>
+            <b-button variant="danger" size="lg" pill block class="w-80 mx-auto mt-5 bg-gradient">대표사진 등록</b-button>
             <b-button variant="light" size="lg" pill block class="w-80 mx-auto mt-4 text-dark">다음에 등록</b-button>
         </b-form>
 

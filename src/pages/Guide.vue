@@ -4,29 +4,50 @@
             <h1>Publishing Guide</h1>
             <h2>사용 라이브러리</h2>
             <ol>
-                <li><router-link to="https://bootstrap-vue.js.org">BootstrapVue</router-link></li>
-                <li><router-link to="https://gs-shop.github.io/vue-slick-carousel/#/example/simple">vue-slick-carousel</router-link></li>
+                <li>
+                    <router-link to="https://bootstrap-vue.js.org">BootstrapVue</router-link>
+                </li>
+                <li>
+                    <router-link to="https://gs-shop.github.io/vue-slick-carousel/#/example/simple">vue-slick-carousel</router-link>
+                </li>
             </ol>
             <h2>페이지</h2>
             <ol>
-                <li><router-link to="/">main</router-link></li>
-                <li><router-link to="/login">login</router-link></li>
-                <li><router-link to="/intro">intro</router-link></li>
-                <li><router-link to="/intro/join">intro join</router-link></li>
-                <li><router-link to="/join">join</router-link></li>
-                <li><router-link to="/profile">profile</router-link></li>
+                <li>
+                    <router-link to="/">main</router-link>
+                </li>
+                <li>
+                    <router-link to="/login">login</router-link>
+                </li>
+                <li>
+                    <router-link to="/intro">intro</router-link>
+                </li>
+                <li>
+                    <router-link to="/intro/join">intro join</router-link>
+                </li>
+                <li>
+                    <router-link to="/join">join</router-link>
+                </li>
+                <li>
+                    <router-link to="/profile">profile</router-link>
+                </li>
             </ol>
         </div>
-        <AuditionListDetail/>
+        <div hidden>
+            <Intro/>
+            <IntroJoin/>
+            <Login/>
+            <Join/>
+            <ProfilePhoto/>
+        </div>
+
+        <Heart/>
+
+        <Main/>
         <AuditionList/>
+        <AuditionListDetail/>
         <AuditionListInfo/>
         <Ranking/>
-        <Intro/>
-        <Login/>
-        <Join/>
-        <IntroJoin/>
-        <Profile/>
-        <Main/>
     </div>
 </template>
 
@@ -36,15 +57,18 @@
     import Join from "@/pages/Join";
     import Intro from "@/pages/Intro";
     import IntroJoin from "@/pages/IntroJoin";
-    import Profile from "@/pages/ProfilePhoto";
     import Ranking from "@/components/Ranking";
     import AuditionList from "@/pages/AuditionList";
     import AuditionListInfo from "@/pages/AuditionListInfo";
     import AuditionListDetail from "@/pages/AuditionListDetail";
+    import ProfilePhoto from "./ProfilePhoto";
+    import Heart from "./Heart";
 
     export default {
         name: 'Guide',
         components: {
+            Heart,
+            ProfilePhoto,
             AuditionList,
             AuditionListInfo,
             AuditionListDetail,
@@ -53,7 +77,6 @@
             IntroJoin,
             Join,
             Login,
-            Profile,
             Main,
         }
     }

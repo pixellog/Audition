@@ -8,8 +8,12 @@ import { BootstrapVue, BootstrapVueIcons } from 'bootstrap-vue'
 Vue.use(BootstrapVue, {
   BButton: { variant: 'primary' },
   BModal: {
-    cancelTitle: '취소',
     okTitle: '확인',
+    cancelTitle: '취소',
+    okVariant: 'danger',
+    cancelVariant:'primary border-0',
+    headerBgVariant:'dark',
+    headerTextVariant:'white',
   },
   BToast: {
     toaster: 'b-toaster-top-center',
