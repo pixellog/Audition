@@ -91,7 +91,7 @@
             }
         },
         beforeMount() {
-            this.isAD();
+            //this.isAD();
         },
         methods: {
             isAD() {

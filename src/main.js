@@ -26,9 +26,9 @@ Vue.use(BootstrapVue, {
     bodyClass: 'text-center',
   },
 });
-Vue.use(BootstrapVueIcons)
+Vue.use(BootstrapVueIcons);
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
 
 import Routes from './routes';
 

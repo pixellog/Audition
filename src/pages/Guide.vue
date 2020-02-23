@@ -41,14 +41,17 @@
             <ProfilePhoto/>
         </div>
 
-        <Reward/>
-        <Heart/>
-
-        <Main/>
-        <AuditionList/>
-        <AuditionListDetail/>
-        <AuditionListInfo/>
-        <Ranking/>
+        <Setting/>
+        <Qna/>
+        <div hidden>
+            <Reward/>
+            <Heart/>
+            <Main/>
+            <AuditionList/>
+            <AuditionListDetail/>
+            <AuditionListInfo/>
+            <Ranking/>
+        </div>
     </div>
 </template>
 
@@ -65,10 +68,14 @@
     import ProfilePhoto from "./ProfilePhoto";
     import Heart from "./Heart";
     import Reward from "./Reward";
+    import Qna from "./Qna";
+    import Setting from "./Setting";
 
     export default {
         name: 'Guide',
         components: {
+            Setting,
+            Qna,
             Reward,
             Heart,
             ProfilePhoto,
