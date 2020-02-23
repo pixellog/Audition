@@ -41,6 +41,7 @@
             <ProfilePhoto/>
         </div>
 
+        <Reward/>
         <Heart/>
 
         <Main/>
@@ -63,10 +64,12 @@
     import AuditionListDetail from "@/pages/AuditionListDetail";
     import ProfilePhoto from "./ProfilePhoto";
     import Heart from "./Heart";
+    import Reward from "./Reward";
 
     export default {
         name: 'Guide',
         components: {
+            Reward,
             Heart,
             ProfilePhoto,
             AuditionList,

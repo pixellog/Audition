@@ -11,12 +11,9 @@
                     <span>96,271</span></div>
             </div>
 
-            <b-tabs nav-class="border-0" fill active-nav-item-class="btn-light text-danger bg-white border-light font-weight-bold">
-                <b-tab v-for="(i,index) in category" v-bind:key="i" :title="i" :active="2"
-                       title-link-class="btn-light py-3 rounded-0"
-                >
-
-                    <div v-if="index==0" class="px-5 py-3">
+            <b-tabs nav-class="tabs-text" fill>
+                <b-tab title="선물하기">
+                    <div class="px-5 py-3">
                         <b-form>
                             <b-row>
                                 <div class="col-12 col-form-label font-weight-bold mt-3">선물할 닉네임 입력</div>
@@ -34,8 +31,9 @@
                             </b-button>
                         </b-form>
                     </div>
-
-                    <div v-if="index==1">
+                </b-tab>
+                <b-tab title="이용내역">
+                    <div>
                         <table class="table bg-white my-3">
                             <thead class="thead-dark text-center">
                             <tr>
@@ -49,17 +47,18 @@
                             <tr v-for="i in 3" v-bind:key="i">
                                 <td>01.11</td>
                                 <td>하트 충전(광고) 적립</td>
-                                <td class="text-center">
-                                    <span class="text-danger">+1,245</span>
-                                    <span class="text-info">-10</span>
+                                <td class="text-right">
+                                    <div class="text-danger"><b-icon icon="plus" font-scale="1.2" variant="danger"></b-icon>1,245</div>
+                                    <div class="text-info"><b-icon icon="dash" font-scale="1.2" variant="info"></b-icon>10</div>
                                 </td>
                                 <td class="text-right">2,000</td>
                             </tr>
                             </tbody>
                         </table>
                     </div>
-
-                    <div v-if="index==2" class="py-3">
+                </b-tab>
+                <b-tab title="이용안내" active>
+                    <div class="py-3">
                         <div v-for="i in 2" v-bind:key="i" class="mb-3">
                             <img src="../assets/images/banner-md.png" alt="" class="w-100" @click="isAD">
                             <b-row no-gutters class="p-3 bg-white align-items-center">
@@ -74,7 +73,6 @@
                             </b-row>
                         </div>
                     </div>
-
                 </b-tab>
             </b-tabs>
 
@@ -90,7 +88,6 @@
         components: {Header},
         data() {
             return {
-                category: ['선물하기', '이용내역', '이용안내']
             }
         },
         beforeMount() {
@@ -99,24 +96,15 @@
         methods: {
             isAD() {
                 // https://bootstrap-vue.js.org/docs/components/modal
-
                 const h = this.$createElement;
-
-                const el = {
-                    template: `ggg`
-                };
-
-                const messageVNode = h(el);
+                const messageVNode = h('div', {domProps: {innerHTML: '<strong>닉네임닉네임</strong> 님에게 <strong class="text-danger d-block h4"><b-icon icon="heart"></b-icon>5,000 개</strong> 선물되었습니다.'}});
 
                 this.$bvModal
                     .msgBoxConfirm([messageVNode], {
                         title: '[상품찜] 삼성노트북 xxxxxxx 시리즈',
-                        centered: true,
                         okTitle: '시작하기',
                         cancelTitle: '닫기',
-                    })
-                    .then(value => {
-                        value ? this.$bvToast.toast('메일 유형이 삭제되었습니다.') : null;
+                        centered: true,
                     })
             }
         }

@@ -2,6 +2,8 @@ import Vue from 'vue'
 import App from './App.vue'
 import VueRouter from 'vue-router';
 Vue.use(VueRouter);
+import Vuex from 'vuex';
+Vue.use(Vuex);
 import './assets/styles/styles.scss';
 import { BootstrapVue, BootstrapVueIcons } from 'bootstrap-vue'
 // https://bootstrap-vue.js.org/docs/misc/settings
@@ -25,8 +27,6 @@ Vue.use(BootstrapVue, {
   },
 });
 Vue.use(BootstrapVueIcons)
-
-
 
 Vue.config.productionTip = false
 

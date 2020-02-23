@@ -21,6 +21,7 @@ import DiaryView from "@/pages/DiaryView";
 import DiaryWrite from "@/pages/DiaryWrite";
 import DiaryReply from "@/pages/DiaryReply";
 import Audition from "@/pages/Audition";
+import Reward from "./pages/Reward";
 
 export default [
   { title: '메인', path: '/', component: Main },
@@ -38,6 +39,9 @@ export default [
   { title: '오디션 후보목록', path: '/audition/entry/detail', component: AuditionListDetail },
 
   { title: '하트', path: '/heart', component: Heart },
+
+  { title: '리워드', path: '/reward', component: Reward },
+
   { title: '랭킹', path: '/ranking', component: Ranking },
 
 
