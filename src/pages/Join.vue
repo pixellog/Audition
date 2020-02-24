@@ -47,7 +47,7 @@
             </b-form-checkbox-group>
 
             <b-row class="mt-4">
-                <label for="" class="col-auto col-form-label font-weight-bold">성별</label>
+                <label for="" class="col-auto col-form-label">성별</label>
                 <b-form-radio-group v-model="gender" :options="genderOptions" class="mt-2 col"/>
             </b-row>
 

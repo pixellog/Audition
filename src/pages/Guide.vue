@@ -12,7 +12,7 @@
                 </li>
             </ol>
             <h2>페이지</h2>
-            <ol>
+            <!--<ol>
                 <li>
                     <router-link to="/">main</router-link>
                 </li>
@@ -31,7 +31,7 @@
                 <li>
                     <router-link to="/profile">profile</router-link>
                 </li>
-            </ol>
+            </ol>-->
         </div>
         <div hidden>
             <Intro/>
@@ -41,16 +41,15 @@
             <ProfilePhoto/>
         </div>
 
-        <Setting/>
+        <Reward/>
         <Qna/>
-        <div hidden>
-            <Reward/>
+        <Setting/>
+        <div >
             <Heart/>
             <Main/>
             <AuditionList/>
             <AuditionListDetail/>
             <AuditionListInfo/>
-            <Ranking/>
         </div>
     </div>
 </template>
@@ -61,7 +60,6 @@
     import Join from "@/pages/Join";
     import Intro from "@/pages/Intro";
     import IntroJoin from "@/pages/IntroJoin";
-    import Ranking from "@/components/Ranking";
     import AuditionList from "@/pages/AuditionList";
     import AuditionListInfo from "@/pages/AuditionListInfo";
     import AuditionListDetail from "@/pages/AuditionListDetail";
@@ -82,7 +80,6 @@
             AuditionList,
             AuditionListInfo,
             AuditionListDetail,
-            Ranking,
             Intro,
             IntroJoin,
             Join,

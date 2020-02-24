@@ -37,8 +37,8 @@ export default [
   { title: '오디션 전체목록', path: '/audition', component: Audition },
   { title: '오디션 상세정보', path: '/audition/info', component: AuditionListInfo },
 
-  { title: '오디션 전체목록', path: '/audition/entry', component: AuditionList },
-  { title: '오디션 후보목록', path: '/audition/entry/detail', component: AuditionListDetail },
+  { title: '오디션 전체목록', path: '/audition/list', component: AuditionList },
+  { title: '오디션 후보목록', path: '/audition/list/detail', component: AuditionListDetail },
 
   { title: '하트', path: '/heart', component: Heart },
   { title: '리워드', path: '/reward', component: Reward },

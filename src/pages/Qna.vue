@@ -1,10 +1,10 @@
 <template>
-    <div>
-
+    <div class="min-vh-100">
         <Heading title="Q&A"/>
 
-        <b-tabs nav-class="tabs-border mb-3" fill>
-            <b-tab title="문의하기" active class="p-5 bg-white">
+        <b-tabs nav-class="tabs-border" fill>
+            <div class="pb-3 bg-muted"></div>
+            <b-tab title="문의하기" class="p-4" active>
                 <b-form>
                     <b-row>
                         <label for="" class="col-3 col-form-label">문의유형</label>
@@ -14,22 +14,25 @@
                         <b-input class="col-9 border-0 pl-0" placeholder="제목을 입력해주세요. "></b-input>
 
                         <label for="" class="col-12 col-form-label">문의내용</label>
-                        <b-textarea class="col-12 mx-3" placeholder="문의내용을 입력해주세요." rows="5"></b-textarea>
+                        <div class="col-12">
+                            <b-textarea placeholder="문의내용을 입력해주세요." rows="5"></b-textarea>
+                        </div>
 
-                        <label for="" class="col-12 col-form-label mt-5">이미지 첨부</label>
-                        <b-form-file multiple
-                                     class="border-0 mx-3"
-                                     v-model="file"
-                                     :state="Boolean(file)"
-                                     placeholder="등록할 이미지를 첨부해주세요."
-                                     drop-placeholder="Drop file here...">
-                            <template slot="file-name" slot-scope="{ names }">
-                                <b-badge variant="dark">{{ names[0] }}</b-badge>
-                                <b-badge v-if="names.length > 1" variant="dark" class="ml-1">
-                                    + {{ names.length - 1 }} More files
-                                </b-badge>
-                            </template>
-                        </b-form-file>
+                        <label for="" class="col-12 col-form-label mt-3">이미지 첨부</label>
+                        <div class="col-12">
+                            <b-form-file multiple
+                                         v-model="file"
+                                         :state="Boolean(file)"
+                                         placeholder="등록할 이미지를 첨부해주세요."
+                                         drop-placeholder="Drop file here...">
+                                <template slot="file-name" slot-scope="{ names }">
+                                    <b-badge variant="dark">{{ names[0] }}</b-badge>
+                                    <b-badge v-if="names.length > 1" variant="dark" class="ml-1">
+                                        + {{ names.length - 1 }} More files
+                                    </b-badge>
+                                </template>
+                            </b-form-file>
+                        </div>
 
                     </b-row>
 
@@ -37,7 +40,7 @@
                 </b-form>
             </b-tab>
 
-            <b-tab title="문의내역" active>
+            <b-tab title="문의내역" class="bg-muted pb-5">
 
                 <div role="tablist">
                     <b-card no-body class="mb-2 border-left-0 border-right-0" v-for="i in 3" v-bind:key="i">
@@ -51,7 +54,7 @@
                             </b-button>
                         </b-card-header>
                         <b-collapse :id="`accordion-${i}`" visible accordion="my-accordion" role="tabpanel">
-                            <b-card-body class="bg-muted px-5 py-4">
+                            <b-card-body class="bg-muted p-4">
                                 <div class="text-primary">
                                     어느순간부터 프로필 사진에 등록이 안 됩니다.
                                     +를 아무리 눌러도 실행이 되지 않고, 사진 앨범에는 뜨지만 오디

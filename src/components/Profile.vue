@@ -12,13 +12,6 @@
                     <h4 style="letter-spacing: .8rem; padding-left: .8rem;">오동백</h4>
                 </div>
 
-                <b-row class="mx-5 my-2 position-relative">
-                    <div class="flag d-inline-block h5 mb-0 p-3">1위</div>
-                    <div class="col-10 offset-2 pl-4">
-                        <h5>오동백</h5>
-                        <p>다짐 한마디 다짐 한마디 다짐 한마디 다짐한 마디 다짐한마디 다짐한마디 다짐 한마디 다짐 한마디 다짐한마디 최대글자수</p>
-                    </div>
-                </b-row>
             </div>
             <b-button variant="danger" pill class="p-0 position-absolute" style="top: 7rem; left: 4rem; width: 50px; height: 50px;">
                 <div>
@@ -43,11 +36,6 @@
         <div class="px-4">
             <div class="d-flex align-items-center"><strong>HEART</strong><span class="h3 mb-0 text-danger"><b-icon icon="heart-fill" class="ml-3 mr-1"/>5,354,555</span></div>
             <div class="d-flex align-items-center"><strong>REWARD</strong><strong class="text-warning"><img src="../assets/images/ic-won@3x.png" alt="" class="x2 mx-3">5,354,555</strong></div>
-        </div>
-
-        <div class="px-4">
-            <div class="d-flex align-items-center justify-content-center"><span class="h3 mb-0 text-danger"><b-icon icon="heart-fill" class="mr-1"/>5,354,555</span></div>
-            <div class="d-flex align-items-center justify-content-center"><strong class="text-warning"><img src="../assets/images/ic-won@3x.png" alt="" class="x2 mx-3">5,354,555</strong></div>
         </div>
 
         <b-row align-h="center" class="m-4">

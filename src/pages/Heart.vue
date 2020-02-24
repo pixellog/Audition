@@ -16,11 +16,11 @@
                     <div class="px-5 py-3">
                         <b-form>
                             <b-row>
-                                <div class="col-12 col-form-label font-weight-bold mt-3">선물할 닉네임 입력</div>
+                                <div class="col-12 col-form-label mt-3">선물할 닉네임 입력</div>
                                 <b-input class="col-12 bg-white rounded border-0 pl-3" placeholder="선물하실 분의 닉네임을 적어주세요"></b-input>
-                                <div class="col-12 col-form-label font-weight-bold mt-3">선물할 하트 수</div>
+                                <div class="col-12 col-form-label mt-3">선물할 하트 수</div>
                                 <b-input class="col-12 bg-white rounded border-0 pl-3" placeholder=""></b-input>
-                                <div class="col-12 col-form-label font-weight-bold mt-3">비밀번호 입력</div>
+                                <div class="col-12 col-form-label mt-3">비밀번호 입력</div>
                                 <b-input class="col-12 bg-white rounded border-0 pl-3" placeholder="본인 비밀번호 입력" type="password"></b-input>
                                 <p class="small mt-2 text-primary">※ 오픈오디션 로그인 시 사용하시는 비밀번호를 입력해주세요.</p>
                             </b-row>
