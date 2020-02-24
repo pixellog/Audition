@@ -29,38 +29,37 @@ import Photo from "@/pages/Photo";
 export default [
   { title: '메인', path: '/', component: Main },
 
-  { title: '회원가입', path: '/join', component: Join },
-  { title: '회원가입 / 대표사진 등록', path: '/join/photo', component: ProfilePhoto },
-  { title: '회원가입성공', path: '/intro/join', component: IntroJoin },
   { title: '로그인', path: '/login', component: Login },
+  { title: '회원가입', path: '/join', component: Join },
+  { title: '회원가입/대표사진 등록', path: '/join/photo', component: ProfilePhoto },
   { title: '인트로', path: '/intro', component: Intro },
+  { title: '인트로/회원가입후', path: '/intro/join', component: IntroJoin },
 
-  { title: '오디션 전체목록', path: '/audition', component: Audition },
-  { title: '오디션 전체목록상세', path: '/audition/detail', component: AuditionListInfo },
-  { title: '오디션 후보목록', path: '/audition/list', component: AuditionList },
-  { title: '오디션 후보목록상세', path: '/audition/list/detail', component: AuditionListDetail },
+  { title: '오디션/전체목록', path: '/audition', component: Audition },
+  { title: '오디션/전체목록/상세', path: '/audition/detail', component: AuditionListInfo },
+  { title: '오디션/후보목록', path: '/audition/list', component: AuditionList },
+  { title: '오디션/후보목록/상세', path: '/audition/list/detail', component: AuditionListDetail },
 
-  { title: '하트', path: '/heart', component: Heart },
-  { title: '포토', path: '/photo', component: Photo },
+  { title: '프로필/메인', path: '/profile', component: ProfileMain },
+  { title: '프로필/입력', path: '/profile/write', component: ProfileWrite },
+  { title: '프로필/보기', path: '/profile/view', component: Profile },
 
-  { title: '리워드', path: '/reward', component: Reward },
+  { title: '다이어리', path: '/diary', component: Diary },
+  { title: '다이어리/입력', path: '/diary/write', component: DiaryWrite },
+  { title: '다이어리/보기', path: '/diary/view', component: DiaryView },
+  { title: '다이어리/댓글', path: '/diary/reply', component: DiaryReply },
+
+  { title: 'Reward', path: '/reward', component: Reward },
   { title: 'Q&A', path: '/qna', component: Qna },
-  { title: '세팅', path: '/setting', component: Setting },
+  { title: 'Setting', path: '/setting', component: Setting },
 
-  { title: '랭킹', path: '/ranking', component: Ranking },
+  { title: 'Heart', path: '/heart', component: Heart },
+  { title: 'Photo-작업중', path: '/photo', component: Photo },
 
-  { title: 'profile 메인', path: '/profile', component: ProfileMain },
-  { title: 'profile 등록', path: '/profile/regist', component: ProfileWrite },
-  { title: 'profile 정보', path: '/profile/view', component: Profile },
-
+  { title: 'Ranking', path: '/ranking', component: Ranking },
   { title: 'My Info', path: '/myinfo', component: MyInfo },
-
-  { title: 'Diary', path: '/diary', component: Diary },
-  { title: 'Diary 상세', path: '/diary/view', component: DiaryView },
-  { title: 'Diary 댓글', path: '/diary/reply', component: DiaryReply },
-  { title: 'Diary 쓰기', path: '/diary/write', component: DiaryWrite },
-
   { title: 'Open Talk', path: '/opentalk', component: OpenTalk },
+
   { title: '가이드', path: '/guide', component: Guide },
   { title: '404', path: '**', component: NotFound },
 ];

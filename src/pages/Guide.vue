@@ -1,21 +1,20 @@
 <template>
-    <div>
+    <div class="p-3">
+        <h3>Publishing Guide</h3>
+        <h4>사용 라이브러리</h4>
+        <ol>
+            <li>
+                <a target="_blank" href="//bootstrap-vue.js.org">BootstrapVue</a>
+            </li>
+            <li>
+                <a target="_blank" href="//gs-shop.github.io/vue-slick-carousel/#/example/simple">vue-slick-carousel</a>
+            </li>
+        </ol>
 
-        <router-link :to="i.path" v-for="i in routes" v-bind:key="i" class="d-block">{{i.title}}</router-link>
-
-        <div class="p-5 d-none">
-            <h1>Publishing Guide</h1>
-            <h2>사용 라이브러리</h2>
-            <ol>
-                <li>
-                    <router-link to="https://bootstrap-vue.js.org">BootstrapVue</router-link>
-                </li>
-                <li>
-                    <router-link to="https://gs-shop.github.io/vue-slick-carousel/#/example/simple">vue-slick-carousel</router-link>
-                </li>
-            </ol>
-            <h2>페이지</h2>
-        </div>
+        <h4>페이지</h4>
+        <ol>
+            <li v-for="i in routes" v-bind:key="i"><router-link :to="i.path">{{i.title}}</router-link></li>
+        </ol>
         <div hidden>
             <Intro/>
             <IntroJoin/>
@@ -29,8 +28,8 @@
             <Setting/>
         </div>
         <div hidden>
-            <Photo/>
             <Heart/>
+            <Photo/>
         </div>
         <div hidden>
             <Main/>

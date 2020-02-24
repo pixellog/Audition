@@ -19,9 +19,10 @@
 <script>
     import Header from "@/components/Header";
     import RankingList from "@/components/RankingList";
+    import Search from "@/components/Search";
 
     export default {
         name: 'Ranking',
-        components: {RankingList, Header},
+        components: {Search, RankingList, Header},
     }
 </script>
