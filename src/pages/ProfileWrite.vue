@@ -1,10 +1,8 @@
 <template>
-    <div>
+    <div class="bg-muted">
         <Header/>
 
-        <div class="bg-dark text-center py-3">
-            <h6 class="text-white mb-0">Profile</h6>
-        </div>
+        <HeadingDark title="Profile"/>
 
         <div class="px-4 py-5">
             <h5 class="mb-4">프로필 입력</h5>
@@ -70,7 +68,7 @@
                 </b-row>
 
 
-                <b-button variant="danger" pill block class="bg-gradient mx-auto w-50 my-4 py-2">완료</b-button>
+                <b-button variant="danger" pill block class="bg-gradient mx-auto w-50 my-5">완료</b-button>
             </b-form>
 
         </div>
@@ -83,10 +81,11 @@
 <script>
     import Header from "@/components/Header";
     import FooterMenu from "@/components/FooterMenu";
+    import HeadingDark from "@/components/HeadingDark";
 
     export default {
         name: 'ProfileWrite',
-        components: {FooterMenu, Header},
+        components: {HeadingDark, FooterMenu, Header},
         data() {
             return {}
         }

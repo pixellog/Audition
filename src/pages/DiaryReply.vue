@@ -1,32 +1,22 @@
 <template>
-    <div class="pb-5 bg-white min-vh-100">
-
-        <div class="p-3 border-bottom">
-            <h6 class="mb-0">
-                <b-icon icon="chevron-left" scale="1.5" class="mr-2"></b-icon>
-                Replies
-            </h6>
-        </div>
+    <div>
+        <Heading title="Replies"/>
 
         <div class="px-4">
-
             <TalkItem class="mt-4"/>
-
         </div>
-
-
     </div>
 </template>
 
 <script>
     import TalkItem from "@/components/TalkItem";
+    import Heading from "@/components/Heading";
 
     export default {
         name: 'DiaryReply',
-        components: {TalkItem},
+        components: {Heading, TalkItem},
         data() {
             return {
-                url: '//kinimage.naver.net/20171221_143/1513808401960QBcEc_JPEG/1513808401719.jpg'
             }
         }
     }

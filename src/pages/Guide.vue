@@ -28,7 +28,7 @@
             <Qna/>
             <Setting/>
         </div>
-        <div>
+        <div hidden>
             <Photo/>
             <Heart/>
         </div>

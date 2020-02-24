@@ -169,3 +169,16 @@ h5 {
   }
 }
 
+.list-primary {
+  & > *{
+    border-bottom: 1px solid $text-muted;
+    align-items: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    min-height: 2.8rem;
+  }
+  .col-form-label {
+    line-height: 1;
+    display: flex;
+  }
+}

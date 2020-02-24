@@ -18,20 +18,8 @@
                             <b-textarea placeholder="문의내용을 입력해주세요." rows="5"></b-textarea>
                         </div>
 
-                        <label for="" class="col-12 col-form-label mt-3">이미지 첨부</label>
                         <div class="col-12">
-                            <b-form-file multiple
-                                         v-model="file"
-                                         :state="Boolean(file)"
-                                         placeholder="등록할 이미지를 첨부해주세요."
-                                         drop-placeholder="Drop file here...">
-                                <template slot="file-name" slot-scope="{ names }">
-                                    <b-badge variant="dark">{{ names[0] }}</b-badge>
-                                    <b-badge v-if="names.length > 1" variant="dark" class="ml-1">
-                                        + {{ names.length - 1 }} More files
-                                    </b-badge>
-                                </template>
-                            </b-form-file>
+                            <InputFile/>
                         </div>
 
                     </b-row>
@@ -91,14 +79,13 @@
 <script>
 
     import Heading from "../components/Heading";
+    import InputFile from "@/components/InputFile";
 
     export default {
         name: 'Qna',
-        components: {Heading},
+        components: {InputFile, Heading},
         data() {
             return {
-                file: null,
-                active: 1
             }
         },
         methods: {}

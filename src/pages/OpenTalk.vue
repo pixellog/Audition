@@ -2,11 +2,9 @@
     <div>
         <Header/>
 
-        <div class="bg-dark text-center py-3">
-            <h6 class="text-white mb-0">OpenTalk</h6>
-        </div>
+        <HeadingDark title="OpenTalk"/>
 
-        <b-row class="px-4 pt-3 pb-1">
+        <b-row class="px-4 pt-2 pb-1 bg-muted">
             <b-button variant="link" class="text-dark font-weight-normal">선택 삭제</b-button>
             <b-button variant="link" class="ml-auto text-dark">전체 삭제</b-button>
         </b-row>
@@ -24,10 +22,11 @@
     import Header from "@/components/Header";
     import FooterMenu from "@/components/FooterMenu";
     import TalkItem from "@/components/TalkItem";
+    import HeadingDark from "@/components/HeadingDark";
 
     export default {
         name: 'OpenTalk',
-        components: {TalkItem, FooterMenu, Header},
+        components: {HeadingDark, TalkItem, FooterMenu, Header},
         data() {
             return {}
         }

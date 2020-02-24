@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="bg-muted">
         <Header/>
 
         <div class="bg-gradient py-4 text-white text-center">
@@ -36,7 +36,7 @@
             </div>
 
             <b-row class="mx-0">
-                <b-button variant="light" pill class="flex-grow-1 mx-1 bg-muted">이용내역</b-button>
+                <b-button variant="primary" pill class="flex-grow-1 mx-1 border-0">이용내역</b-button>
                 <b-button variant="danger" pill class="flex-grow-1 mx-1">충전하기</b-button>
             </b-row>
         </b-card>
@@ -54,14 +54,14 @@
             </div>
 
             <b-row class="mx-0">
-                <b-button variant="light" pill class="flex-grow-1 mx-1 bg-muted">내역</b-button>
+                <b-button variant="primary" pill class="flex-grow-1 mx-1 border-0">내역</b-button>
                 <b-button variant="danger" pill class="flex-grow-1 mx-1">출금신청</b-button>
             </b-row>
         </b-card>
 
         <Report/>
 
-        <b-card class="rounded border-0 shadow px-3 py-2 m-4">
+        <b-card class="rounded border-0 shadow px-3 py-2 mx-4 mb-4" style="margin-top: -1rem;">
             <h5 class="d-flex align-items-center">DIARY
                 <b-button variant="link" class="ml-auto btn-icon">
                     <b-icon icon="chevron-right" scale="1.2" variant="secondary"/>
@@ -72,7 +72,6 @@
                 <div class="col small">dittototo 님, soyeon_2 님 외 52명이 댓글을 남겼습니다. <span class="text-primary pl-1">2시간 전</span></div>
                 <div class="col-auto"><img src="../assets/images/thum-profile.png" alt="" style="width: 40px; height: 40px; margin-left: 15px;"></div>
             </b-row>
-
         </b-card>
 
         <FooterMenu/>

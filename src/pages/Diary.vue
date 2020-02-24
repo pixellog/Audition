@@ -1,5 +1,5 @@
 <template>
-    <div class="pb-5">
+    <div class="bg-muted">
         <Header/>
 
         <div class="bg-dark text-center py-3 position-relative">
@@ -8,7 +8,7 @@
             <b-form-checkbox value="0" name="" switch style="position:absolute; right: 15px; top: 25%;"></b-form-checkbox>
         </div>
 
-        <b-row class="px-4 pt-3 pb-1">
+        <b-row class="px-4 pt-2 pb-1 bg-muted">
             <b-button variant="link" class="text-dark font-weight-normal">선택 삭제</b-button>
             <b-button variant="link" class="ml-auto text-dark">전체 삭제</b-button>
         </b-row>
@@ -25,7 +25,7 @@
         </b-row>
 
         <b-row class="p-3 mt-3 bg-white" v-for="i in 3" v-bind:key="i">
-            <div class="col-auto" style="width: 5rem;height: 5rem;">
+            <div class="col-auto" style="width: 4.5rem;height: 4.5rem;">
                 <img src="../assets/images/thum-profile-sm.png" alt="" class="w-100 m-1 rounded-circle">
             </div>
             <div class="col">
