@@ -11,10 +11,10 @@ import AuditionListInfo from "@/pages/AuditionListInfo";
 import AuditionListDetail from "@/pages/AuditionListDetail";
 import NotFound from "@/pages/404.vue";
 import Heart from "@/pages/Heart";
-import ProfileMain from "@/pages/ProfileMain";
+import Profile from "@/pages/Profile";
 import MyInfo from "@/pages/MyInfo";
 import ProfileWrite from "@/pages/ProfileWrite";
-import Profile from "@/pages/Profile";
+import ProfileView from "@/pages/ProfileView";
 import OpenTalk from "@/pages/OpenTalk";
 import Diary from "@/pages/Diary";
 import DiaryView from "@/pages/DiaryView";
@@ -29,20 +29,21 @@ import Photo from "@/pages/Photo";
 export default [
   { title: '메인', path: '/', component: Main },
 
+  { title: '오디션/전체목록', path: '/audition', component: Audition },
+  { title: '오디션/전체목록/상세', path: '/audition/detail', component: AuditionListInfo },
+  { title: '오디션/후보목록', path: '/audition/list', component: AuditionList },
+  { title: '오디션/후보목록/상세', path: '/audition/list/detail', component: AuditionListDetail },
+  { title: 'Ranking', path: '/ranking', component: Ranking },
+
   { title: '로그인', path: '/login', component: Login },
   { title: '회원가입', path: '/join', component: Join },
   { title: '회원가입/대표사진 등록', path: '/join/photo', component: ProfilePhoto },
   { title: '인트로', path: '/intro', component: Intro },
   { title: '인트로/회원가입후', path: '/intro/join', component: IntroJoin },
 
-  { title: '오디션/전체목록', path: '/audition', component: Audition },
-  { title: '오디션/전체목록/상세', path: '/audition/detail', component: AuditionListInfo },
-  { title: '오디션/후보목록', path: '/audition/list', component: AuditionList },
-  { title: '오디션/후보목록/상세', path: '/audition/list/detail', component: AuditionListDetail },
-
-  { title: '프로필/메인', path: '/profile', component: ProfileMain },
+  { title: '프로필/메인', path: '/profile', component: Profile },
   { title: '프로필/입력', path: '/profile/write', component: ProfileWrite },
-  { title: '프로필/보기', path: '/profile/view', component: Profile },
+  { title: '프로필/보기', path: '/profile/view', component: ProfileView },
 
   { title: '다이어리', path: '/diary', component: Diary },
   { title: '다이어리/입력', path: '/diary/write', component: DiaryWrite },
@@ -56,7 +57,7 @@ export default [
   { title: 'Heart', path: '/heart', component: Heart },
   { title: 'Photo-작업중', path: '/photo', component: Photo },
 
-  { title: 'Ranking', path: '/ranking', component: Ranking },
+
   { title: 'My Info', path: '/myinfo', component: MyInfo },
   { title: 'Open Talk', path: '/opentalk', component: OpenTalk },
 

@@ -2,11 +2,12 @@
     <div class="bg-muted">
         <Header/>
 
-        <div class="bg-dark text-center py-3 position-relative">
-            <h6 class="text-white mb-0">Diary</h6>
-            <!-- https://bootstrap-vue.js.org/docs/components/form-checkbox -->
-            <b-form-checkbox value="0" name="" switch style="position:absolute; right: 15px; top: 25%;"></b-form-checkbox>
-        </div>
+        <HeadingDark title="Diary">
+            <div slot="right">
+                <!-- https://bootstrap-vue.js.org/docs/components/form-checkbox -->
+                <b-form-checkbox value="0" name="" switch></b-form-checkbox>
+            </div>
+        </HeadingDark>
 
         <b-row class="px-4 pt-2 pb-1 bg-muted">
             <b-button variant="link" class="text-dark font-weight-normal">선택 삭제</b-button>
@@ -15,7 +16,7 @@
 
         <b-row no-gutters align-h="between" align-v="center" class="bg-white p-2">
             <div class="col-4">
-                <b-button variant="outline-primary" size="sm" class="border-0">
+                <b-button variant="link" size="sm">
                     <b-icon icon="chevron-left" class="mr-1"></b-icon>
                     2019.11
                 </b-button>
@@ -50,10 +51,11 @@
     import Header from "@/components/Header";
     import FooterMenu from "@/components/FooterMenu";
     import SnsButton from "@/components/SnsButton";
+    import HeadingDark from "@/components/HeadingDark";
 
     export default {
         name: 'Diary',
-        components: {SnsButton, FooterMenu, Header},
+        components: {HeadingDark, SnsButton, FooterMenu, Header},
         data() {
             return {}
         }
