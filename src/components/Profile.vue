@@ -13,15 +13,12 @@
                 </div>
 
             </div>
-            <b-button variant="danger" pill class="p-0 position-absolute" style="top: 7rem; left: 4rem; width: 50px; height: 50px;">
-                <div>
-                    <b-icon icon="star-fill" stacked scale=".5"/>
-                    팔로우
-                </div>
+            <b-button variant="danger" size="sm" pill class="p-0 position-absolute text-center" style="top: 7rem; left: 4rem; width: 50px; height: 50px;">
+                <b-icon icon="star-fill" class="d-block mx-auto"/>
+                팔로우
             </b-button>
-            <b-button variant="purple" size="lg" pill class="p-0 position-absolute" style="top: 7rem; right: 4rem; width: 50px; height: 50px;">
-                <!--                <b-icon icon="star-fill" stacked scale=".5"/>-->
-                <b-icon icon="plus" scale="2"></b-icon>
+            <b-button variant="purple" size="sm" pill class="p-0 position-absolute text-center" style="top: 7rem; right: 4rem; width: 50px; height: 50px;">
+                <i class="icon icon-share p-2 d-block"></i>
                 공유
             </b-button>
         </div>
@@ -35,12 +32,12 @@
 
         <div class="px-4">
             <div class="d-flex align-items-center"><strong>HEART</strong><span class="h3 mb-0 text-danger"><b-icon icon="heart-fill" class="ml-3 mr-1"/>5,354,555</span></div>
-            <div class="d-flex align-items-center"><strong>REWARD</strong><strong class="text-warning"><img src="../assets/images/ic-won@3x.png" alt="" class="x2 mx-3">5,354,555</strong></div>
+            <div class="d-flex align-items-center"><strong>REWARD</strong><strong class="text-warning"><i class="icon icon-won p-2 mx-2"></i>5,354,555</strong></div>
         </div>
 
         <b-row align-h="center" class="m-4">
-            <b-button class="mx-1 py-2 col bg-muted border-0" variant="primary" pill>투표내역</b-button>
-            <b-button class="mx-1 py-2 col bg-gradient" variant="danger" pill>투표하기</b-button>
+            <b-button class="mx-1 col bg-muted border-0" variant="primary" pill>투표내역</b-button>
+            <b-button class="mx-1 col bg-gradient" variant="danger" pill>투표하기</b-button>
         </b-row>
 
         <div class="shadow rounded py-4 px-3 mx-3">
@@ -82,8 +79,7 @@
     export default {
         name: 'Profile',
         data() {
-            return {
-            }
+            return {}
         },
     }
 </script>

@@ -49,7 +49,8 @@
             </h5>
 
             <div class="text-dark h2 text-center my-3 d-flex align-items-center justify-content-center">
-                <img src="../assets/images/ic-won@3x.png" alt="" class="mr-2" style="width: 2rem;">
+<!--                <img src="../assets/images/ic-won@3x.png" alt="" class="mr-2" style="width: 2rem;">-->
+                <i class="icon icon-won p-3 mr-2"></i>
                 5,000,000
             </div>
 
