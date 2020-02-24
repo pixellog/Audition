@@ -24,6 +24,7 @@ import Audition from "@/pages/Audition";
 import Reward from "./pages/Reward";
 import Setting from "./pages/Setting";
 import Qna from "./pages/Qna";
+import Photo from "@/pages/Photo";
 
 export default [
   { title: '메인', path: '/', component: Main },
@@ -35,18 +36,18 @@ export default [
   { title: '인트로', path: '/intro', component: Intro },
 
   { title: '오디션 전체목록', path: '/audition', component: Audition },
-  { title: '오디션 상세정보', path: '/audition/info', component: AuditionListInfo },
-
-  { title: '오디션 전체목록', path: '/audition/list', component: AuditionList },
-  { title: '오디션 후보목록', path: '/audition/list/detail', component: AuditionListDetail },
+  { title: '오디션 전체목록상세', path: '/audition/detail', component: AuditionListInfo },
+  { title: '오디션 후보목록', path: '/audition/list', component: AuditionList },
+  { title: '오디션 후보목록상세', path: '/audition/list/detail', component: AuditionListDetail },
 
   { title: '하트', path: '/heart', component: Heart },
+  { title: '포토', path: '/photo', component: Photo },
+
   { title: '리워드', path: '/reward', component: Reward },
-  { title: '세팅', path: '/setting', component: Setting },
   { title: 'Q&A', path: '/qna', component: Qna },
+  { title: '세팅', path: '/setting', component: Setting },
 
   { title: '랭킹', path: '/ranking', component: Ranking },
-
 
   { title: 'profile 메인', path: '/profile', component: ProfileMain },
   { title: 'profile 등록', path: '/profile/regist', component: ProfileWrite },
