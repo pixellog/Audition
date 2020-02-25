@@ -14,7 +14,7 @@
 
             </div>
             <b-button variant="danger" size="sm" pill class="p-0 position-absolute text-center" style="top: 7rem; left: 4rem; width: 50px; height: 50px;">
-                <b-icon icon="star-fill" class="d-block mx-auto"/>
+                <i class="icon icon-star p-2 d-block"></i>
                 팔로우
             </b-button>
             <b-button variant="purple" size="sm" pill class="p-0 position-absolute text-center" style="top: 7rem; right: 4rem; width: 50px; height: 50px;">
@@ -31,7 +31,7 @@
 
 
         <div class="px-4">
-            <div class="d-flex align-items-center"><strong>HEART</strong><span class="h3 mb-0 text-danger"><b-icon icon="heart-fill" class="ml-3 mr-1"/>5,354,555</span></div>
+            <div class="d-flex align-items-center"><strong>HEART</strong><span class="h3 mb-0 text-danger"><i class="icon icon-heart p-3 mx-2"></i>5,354,555</span></div>
             <div class="d-flex align-items-center"><strong>REWARD</strong><strong class="text-warning"><i class="icon icon-won p-2 mx-2"></i>5,354,555</strong></div>
         </div>
 
@@ -41,16 +41,17 @@
         </b-row>
 
         <div class="shadow rounded py-4 px-3 mx-3">
-            <!-- tooltip : https://bootstrap-vue.js.org/docs/components/tooltip/#tooltips -->
+
             <h5 class="d-flex">Auto Vote <span class="font-weight-normal ml-3">3,000,000 표</span>
-                <b-icon icon="question-fill" variant="primary" class="ml-auto" id="tooltip-button-1" custom-class="border p-5"></b-icon>
+                <i class="icon icon-question p-2 ml-auto" id="tooltip-button-1"></i>
                 <b-tooltip target="tooltip-button-1" custom-class="w-20">I start open I start open I start open</b-tooltip>
+                <!-- tooltip : https://bootstrap-vue.js.org/docs/components/tooltip/#tooltips -->
             </h5>
             <div class="progress mt-3 mb-4 rounded" style="height: 1.5rem;">
                 <div class="progress-bar bg-danger rounded" role="progressbar" style="width: 67%;" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100">67%</div>
             </div>
 
-            <img src="../assets/images/banner-sm.png" alt="" class="w-100">
+            <!--            <img src="../assets/images/banner-sm.png" alt="" class="w-100">-->
 
             <b-button class="bg-muted py-2 border-0 col-6 offset-3" variant="primary" pill>참여하기</b-button>
         </div>

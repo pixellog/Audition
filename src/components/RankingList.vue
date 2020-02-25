@@ -1,6 +1,6 @@
 <template>
     <div class="px-3 bg-white">
-        <b-row v-for="(i,index) in 5" v-bind:key="i" class="border-bottom py-3" align-h="center">
+        <b-row @click="goDetail" v-for="(i,index) in 5" v-bind:key="i" class="border-bottom py-3" align-h="center">
             <div class="col-4">
                 <img src="../assets/images/ranking-1@3x.png" alt="" class="w-100"/>
             </div>
@@ -25,5 +25,10 @@
 <script>
     export default {
         name: 'RankingList',
+        methods: {
+            goDetail(){
+                this.$router.push({ path: 'list/detail' });
+            }
+        }
     }
 </script>

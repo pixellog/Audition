@@ -5,9 +5,9 @@
         </div>
 
         <b-button-group class="w-100">
-            <b-button to="/audition" variant="light" squared><img src="../assets/images/ic-audition@3x.png" alt="" class="x3 mx-auto d-block">Audition</b-button>
-            <b-button to="/audition/list" variant="light" squared><img src="../assets/images/ic-openaudition@3x.png" alt="" class="x3 mx-auto d-block">OpenAudition</b-button>
-            <b-button to="/profile" variant="light" squared><img src="../assets/images/ic-profile@3x.png" alt="" class="x3 mx-auto d-block">Profile</b-button>
+            <b-button to="/audition" variant="light" squared><i class="icon icon-audition d-flex p-3"></i>Audition</b-button>
+            <b-button to="/audition/list" variant="light" squared><i class="icon icon-openaudition d-flex p-3"></i>OpenAudition</b-button>
+            <b-button to="/profile" variant="light" squared><i class="icon icon-profile d-flex p-3"></i>Profile</b-button>
         </b-button-group>
     </header>
 </template>
