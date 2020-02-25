@@ -15,12 +15,14 @@
                     <div class="w-40 d-inline-block px-2 position-relative" v-for="(item,index) in 5" v-bind:key="item">
                         <img src="../assets/images/ranking-1@3x.png" :alt="item" class="w-100">
                         <div class="flag ml-4">{{index+1}}위</div>
-                        <h4 class="d-flex align-items-center mt-3 mb-0">
+                        <h5 class="d-flex align-items-center mt-3 mb-0">
                             <strong>오동백</strong>
-                            <b-button variant="link p-0" class="ml-auto">보기<b-icon icon="plus"/></b-button>
-                        </h4>
-                        <div><img class="x2" src="../assets/images/ic-heart@3x.png" alt=""><span class="h5 text-danger ml-2">5,354,555</span></div>
-                        <div><img class="x2" src="../assets/images/ic-won@3x.png" alt=""><span class="text-warning ml-2">5,354,555</span></div>
+                            <b-button variant="link p-0" class="ml-auto">보기
+                                <b-icon icon="plus"/>
+                            </b-button>
+                        </h5>
+                        <div><i class="icon icon-heart"></i><span class="h5 text-danger ml-2">5,354,555</span></div>
+                        <div><i class="icon icon-won"></i><span class="text-warning ml-2">5,354,555</span></div>
                     </div>
                 </div>
             </b-tab>

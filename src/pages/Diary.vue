@@ -46,8 +46,8 @@
         <FooterMenu/>
         <FooterButton>
             <FooterButton>
-                <b-button variant="danger" pill class="ml-auto p-0" style="width: 60px;">
-                    <img src="../assets/images/btn-write@3x.png" alt="write" class="w-100">
+                <b-button to="/diary/write" variant="danger" pill class="ml-auto btn-icon">
+                    <img src="../assets/images/btn-write@3x.png" alt="write" style="width: 60px;">
                 </b-button>
             </FooterButton>
         </FooterButton>

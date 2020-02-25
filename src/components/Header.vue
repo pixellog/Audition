@@ -1,8 +1,8 @@
 <template>
     <header class="bg-white overflow-hidden w-100">
-        <div class="logo-sm my-3 mx-auto">
+        <router-link to="/" class="logo-sm my-3 mx-auto d-flex">
             <div class="sr-only">Open Audition</div>
-        </div>
+        </router-link>
 
         <b-button-group class="w-100">
             <b-button to="/audition" variant="light" squared><i class="icon icon-audition d-flex p-3"></i>Audition</b-button>

@@ -34,6 +34,16 @@
   color: #fff;
 }
 
+
+.btn-icon {
+  line-height: 1;
+  padding: 0 !important;
+  &:active,&:hover {
+    opacity: .5;
+  }
+}
+
+
 // form
 .rounded {
   border-radius: 1.2rem !important;
@@ -44,16 +54,9 @@
 }
 
 .form-control,.custom-select {
-  //min-height: 3.3rem;
-  //padding-top: 1.8rem;
-  //padding-bottom: 1.8rem;
   &::placeholder {
     color: #8a8a8a;
   }
-}
-
-.rounded .col-form-label {
-  //line-height: 2.5;
 }
 
 // radio
