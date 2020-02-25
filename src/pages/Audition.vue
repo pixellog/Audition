@@ -9,7 +9,7 @@
 
             <div class="d-flex align-items-center">
                 <b-form-radio-group :checked="0" :options="Object.assign({}, ['전체', '진행', '종료'])"/>
-                <b-button variant="danger" size="sm" pill class="ml-auto">
+                <b-button variant="danger" pill class="ml-auto py-2 px-3">
                     <i class="icon icon-filter mr-1"></i>
                     필터
                 </b-button>

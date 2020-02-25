@@ -33,7 +33,7 @@
                 <div>
                     <div class="small">자존감 문제는 내게만 중요한 일이 아니었다. 불행하다며 나를 찾아오는 대다수는 자존감이 부족한 사람들이었다. - 자존감 수업中 ...</div>
                     <div class="mt-2 d-flex" style="overflow-x: auto; margin-right: -15px;">
-                        <img src="../assets/images/thum-profile-sm.png" alt="" class="w-25 m-1" v-for="i in 6" v-bind:key="i">
+                        <img src="../assets/images/thum-profile-sm.png" alt="" class="m-1" style="width: 74px; height: 74px;" v-for="i in 6" v-bind:key="i">
                     </div>
                 </div>
 
@@ -47,7 +47,7 @@
         <FooterButton>
             <FooterButton>
                 <b-button to="/diary/write" variant="danger" pill class="ml-auto btn-icon">
-                    <img src="../assets/images/btn-write@3x.png" alt="write" style="width: 60px;">
+                    <img src="../assets/images/btn-write@3x.png" alt="write" style="width: 66px;">
                 </b-button>
             </FooterButton>
         </FooterButton>

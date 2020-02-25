@@ -20,7 +20,7 @@
             </ol>
         </div>
 
-        <div hidden>
+        <div>
             <Main/>
             <Audition/>
             <AuditionListInfo/>
@@ -28,7 +28,7 @@
             <AuditionListDetail/>
         </div>
 
-        <div hidden>
+        <div>
             <Intro/>
             <IntroJoin/>
             <Login/>

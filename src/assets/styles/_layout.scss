@@ -72,8 +72,19 @@
   overflow: hidden;
 }
 
-.end img {
-  background-color: rgba(0, 0, 0, .2);
+.post {
+  .bg-dark {
+    background-color: #000;
+    border-radius: .75rem;
+  }
+  &.off {
+    .bg-dark {
+      img {
+        filter: grayscale(1);
+        opacity: .4;
+      }
+    }
+  }
 }
 
 .border-lg {
@@ -120,3 +131,4 @@
     }
   }
 }
+

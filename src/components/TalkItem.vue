@@ -12,7 +12,7 @@
 
                 <div class="bg-muted p-3 rounded my-2">
 
-                    <div class="border-bottom pb-3 mb-3">
+                    <div class="border-bottom pb-3 mb-1">
                         <b-badge variant="danger" class="rounded-0">베스트</b-badge>
                         러블리한 인상에, 시원한 기럭지까지. 완벽한것 같아요. 1등 갑시다~~!
                     </div>
@@ -33,7 +33,7 @@
 
                             <div class="bg-muted p-3 rounded my-2">
 
-                                <div class="border-bottom pb-3 mb-3">
+                                <div class="border-bottom pb-3 mb-1">
                                     <strong class="mr-2">닉네임입력중</strong>
                                     답변댓글은 이런식으로, 닉네임이 붙고, 뒤에 글 입력.
                                 </div>
