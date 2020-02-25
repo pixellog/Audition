@@ -4,34 +4,34 @@
 
         <div class="bg-gradient py-4 text-white text-center">
 
-            <div class="profile-img mt-0" :style="`background-image:url(${url}); width:80px; height:80px; border-width:2px`">
+            <div class="profile-img mt-1" :style="`background-image:url(${url}); width:80px; height:80px; border-width:2px`">
                 <!-- 사진이 있으면 숨김처리 -->
                 <b-icon v-if="!url" icon="plus" scale="4" variant="primary"/>
 
-                <b-button variant="link" pill class="position-absolute btn-icon" style="right: -4px; bottom: -4px; width: 1.5rem; height: 1.5rem;">
+                <b-button variant="link" pill class="position-absolute btn-icon" style="right: -12px; bottom: 2px; width: 2rem; height: 2rem;">
                     <img src="../assets/images/camera@2x.png" alt="프로필 이미지 추가하기" class="w-100"/>
                 </b-button>
             </div>
 
-            <h6 class="mt-2"><span>오동백</span> 님</h6>
+            <h5 class="mt-2"><span>오동백</span> 님</h5>
 
             <b-row class="mx-4 mt-3 mb-5">
-                <b-button variant="light" size="sm" pill class="text-danger mx-1 flex-grow-1 font-weight-bold">PROFILE</b-button>
-                <b-button variant="light" size="sm" pill class="text-danger mx-1 flex-grow-1 font-weight-bold">PHOTO</b-button>
-                <b-button variant="light" size="sm" pill class="text-danger mx-1 flex-grow-1 font-weight-bold">DIARY</b-button>
+                <b-button variant="light" pill class="text-danger mx-1 col font-weight-bold">PROFILE</b-button>
+                <b-button variant="light" pill class="text-danger mx-1 col font-weight-bold">PHOTO</b-button>
+                <b-button variant="light" pill class="text-danger mx-1 col font-weight-bold">DIARY</b-button>
             </b-row>
 
         </div>
 
         <b-card class="rounded border-0 shadow px-3 py-2 m-4" style="margin-top: -3.8rem !important;">
             <h5 class="d-flex align-items-center">HEART
-                <b-button variant="link" class="ml-auto btn-icon">
+                <b-button variant="link" class="ml-auto p-0">
                     <b-icon icon="chevron-right" scale="1.2" variant="secondary"/>
                 </b-button>
             </h5>
 
-            <div class="text-danger h2 text-center my-3">
-                <b-icon icon="heart-fill"></b-icon>
+            <div class="text-danger h1 my-3 text-center">
+                <i class="icon icon-myheart p-4 mr-2"></i>
                 96,271
             </div>
 
@@ -43,12 +43,12 @@
 
         <b-card class="rounded border-0 shadow px-3 py-2 m-4">
             <h5 class="d-flex align-items-center">REWARD
-                <b-button variant="link" class="ml-auto btn-icon">
+                <b-button variant="link" class="ml-auto p-0">
                     <b-icon icon="chevron-right" scale="1.2" variant="secondary"/>
                 </b-button>
             </h5>
 
-            <div class="text-dark h2 text-center my-3 d-flex align-items-center justify-content-center">
+            <div class="text-dark h1 my-3 text-center d-flex align-items-center justify-content-center">
                 <i class="icon icon-won p-3 mr-2"></i>
                 5,000,000
             </div>
@@ -63,7 +63,7 @@
 
         <b-card class="rounded border-0 shadow px-3 py-2 mx-4 mb-4" style="margin-top: -1rem;">
             <h5 class="d-flex align-items-center">DIARY
-                <b-button variant="link" class="ml-auto btn-icon">
+                <b-button variant="link" class="ml-auto p-0">
                     <b-icon icon="chevron-right" scale="1.2" variant="secondary"/>
                 </b-button>
             </h5>

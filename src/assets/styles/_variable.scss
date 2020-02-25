@@ -116,6 +116,11 @@ h5 {
 .btn-icon {
   line-height: 1;
   padding: 0 !important;
+  width: 60px;
+  height: 60px;
+  &:active,&:hover {
+    opacity: .5;
+  }
 }
 
 .shadow-lg {
@@ -177,9 +182,14 @@ h5 {
   & > * {
     border-bottom: 1px solid $text-muted;
     align-items: center;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: .6rem;
+    padding-bottom: .6rem;
     min-height: 2.8rem;
+  }
+
+  &.setting> * {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 
   .col-form-label {
@@ -194,16 +204,19 @@ h5 {
   padding: 5px 0 5px 15px;
 }
 
-.btn:hover {
+.btn {
   transition: .2s all;
-  .icon {
-    filter: invert(1);
-  }
-  .icon-filter {
-    filter: grayscale(.5);
-  }
-  .icon-like {
-    filter: grayscale(1);
+  &:hover,&:active {
+    .icon {
+      opacity: .6;
+      filter: invert(1);
+    }
+    .icon-filter {
+      filter: grayscale(.5);
+    }
+    .icon-like {
+      filter: grayscale(1);
+    }
   }
 }
 
@@ -213,11 +226,23 @@ h5 {
 
 .icon-filter {background-image: url('../images/ic-filter@3x.png');}
 .icon-question {background-image: url('../images/ic-question@3x.png');}
+.icon-myheart {background-image: url('../images/ic-myheart@3x.png');}
 .icon-heart {background-image: url('../images/ic-heart@3x.png');}
+.icon-camera {background-image: url('../images/ic-camera@3x.png');}
 .icon-won {background-image: url('../images/ic-won@3x.png');}
+.icon-won-circle {background-image: url('../images/ic-won-circle@3x.png');}
 .icon-star {background-image: url('../images/ic-star@3x.png');}
 .icon-share {background-image: url('../images/ic-share@3x.png');}
 .icon-like {background-image: url('../images/ic-like@3x.png');}
 .icon-hate {background-image: url('../images/ic-hate@3x.png');}
 .icon-reply {background-image: url('../images/ic-reply@3x.png');}
 .icon-reply-fill {background-image: url('../images/ic-reply-fill@3x.png');}
+
+
+.custom-control-input ~ .custom-control-label::before {
+  background-color: #c8c8c8 !important;
+}
+
+.custom-switch .custom-control-label::after {
+  background-color: #fff !important;
+}

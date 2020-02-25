@@ -1,8 +1,7 @@
 <template>
-    <div class="bg-dark text-white p-3 text-center d-flex justify-content-center">
-        <slot name="left"></slot>
+    <div class="bg-dark text-white p-3 text-center position-relative">
         <strong>{{title}}</strong>
-        <slot name="right" class="ml-auto"></slot>
+        <slot name="right"></slot>
     </div>
 </template>
 

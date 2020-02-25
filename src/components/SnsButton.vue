@@ -6,13 +6,13 @@
             <i class="icon icon-reply p-2 mr-1"></i>
             댓글달기
         </b-button>
-        <b-button variant="outline-danger" size="sm" pill class="ml-auto mr-2">
-            <i class="icon icon-like mr-1"></i>
-            254
+        <b-button variant="outline-danger" size="sm" pill class="py-0 ml-auto mr-2">
+            <i class="icon icon-like p-1 mr-1"></i>
+            <small>254</small>
         </b-button>
-        <b-button variant="outline-primary" size="sm" pill>
-            <i class="icon icon-hate mr-1"></i>
-            18
+        <b-button variant="outline-primary" size="sm" pill class="py-0">
+            <i class="icon icon-hate p-1 mr-1"></i>
+            <small>18</small>
         </b-button>
     </div>
 </template>

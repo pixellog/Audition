@@ -3,9 +3,9 @@
         <Header/>
 
         <HeadingDark title="Diary">
-            <div slot="right">
+            <div slot="right" style="position:absolute; right: 1rem; top: .75rem; border:1px solid #000;">
                 <!-- https://bootstrap-vue.js.org/docs/components/form-checkbox -->
-                <b-form-checkbox value="0" name="" switch></b-form-checkbox>
+                <b-form-checkbox value="0" name="" switch size="lg"></b-form-checkbox>
             </div>
         </HeadingDark>
 
@@ -44,6 +44,13 @@
         </b-row>
 
         <FooterMenu/>
+        <FooterButton>
+            <FooterButton>
+                <b-button variant="danger" pill class="ml-auto p-0" style="width: 60px;">
+                    <img src="../assets/images/btn-write@3x.png" alt="write" class="w-100">
+                </b-button>
+            </FooterButton>
+        </FooterButton>
     </div>
 </template>
 
@@ -52,10 +59,11 @@
     import FooterMenu from "@/components/FooterMenu";
     import SnsButton from "@/components/SnsButton";
     import HeadingDark from "@/components/HeadingDark";
+    import FooterButton from "@/components/FooterButton";
 
     export default {
         name: 'Diary',
-        components: {HeadingDark, SnsButton, FooterMenu, Header},
+        components: {FooterButton, HeadingDark, SnsButton, FooterMenu, Header},
         data() {
             return {}
         }

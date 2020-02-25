@@ -7,7 +7,14 @@
             <img src="../assets/images/audition-info.jpg" alt="" class="w-100">
         </div>
 
-        <FooterButton/>
+        <FooterButton>
+            <b-button variant="link" pill class="btn-icon">
+                <img src="../assets/images/btn-heart-break@3x.png" alt="싫어요" class="w-100">
+            </b-button>
+            <b-button variant="link" pill class="ml-auto btn-icon">
+                <img src="../assets/images/btn-plus@3x.png" alt="추가하기" class="w-100">
+            </b-button>
+        </FooterButton>
     </div>
 </template>
 

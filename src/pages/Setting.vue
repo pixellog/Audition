@@ -5,7 +5,7 @@
         </div>
 
         <b-form>
-            <b-row no-gutters class="list-primary">
+            <b-row no-gutters class="list-primary setting">
                 <label for="" class="col-4 pl-3 col-form-label">알림 설정</label>
                 <b-form-radio-group class="col-8" :checked="0" :options="Object.assign({},['소리','소리+진동','진동','무음'])"/>
 

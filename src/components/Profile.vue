@@ -13,13 +13,11 @@
                 </div>
 
             </div>
-            <b-button variant="danger" size="sm" pill class="p-0 position-absolute text-center" style="top: 7rem; left: 4rem; width: 50px; height: 50px;">
-                <i class="icon icon-star p-2 d-block"></i>
-                팔로우
+            <b-button variant="link" pill class="btn-icon position-absolute text-center" style="top: 7rem; left: 4rem;">
+                <img src="../assets/images/btn-follow@3x.png" alt="팔로우" class="w-100">
             </b-button>
-            <b-button variant="purple" size="sm" pill class="p-0 position-absolute text-center" style="top: 7rem; right: 4rem; width: 50px; height: 50px;">
-                <i class="icon icon-share p-2 d-block"></i>
-                공유
+            <b-button variant="link" pill class="btn-icon position-absolute text-center" style="top: 7rem; right: 4rem;">
+                <img src="../assets/images/btn-share@3x.png" alt="공유" class="w-100">
             </b-button>
         </div>
 
