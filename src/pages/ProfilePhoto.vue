@@ -10,8 +10,8 @@
                 <!-- 사진이 있으면 숨김처리 -->
                 <b-icon v-if="!url" icon="plus" scale="4" variant="primary"/>
 
-                <b-button variant="link" size="lg" pill class="position-absolute btn-icon" style="right: -20px;bottom: -4px">
-                    <img src="../assets/images/camera@2x.png" alt="프로필 이미지 추가하기" class="x2" />
+                <b-button variant="link" size="lg" pill class="position-absolute btn-icon" style="right: -10px;bottom: 10px">
+                    <img src="../assets/images/camera@2x.png" alt="프로필 이미지 추가하기" style="width: 42px;"/>
                 </b-button>
             </div>
 

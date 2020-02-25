@@ -14,10 +14,10 @@
 
             </div>
             <b-button variant="link" pill class="btn-icon position-absolute text-center" style="top: 7rem; left: 4rem;">
-                <img src="../assets/images/btn-follow@3x.png" alt="팔로우" class="w-100">
+                <img src="../assets/images/btn-follow@3x.png" alt="팔로우" style="width: 60px;">
             </b-button>
             <b-button variant="link" pill class="btn-icon position-absolute text-center" style="top: 7rem; right: 4rem;">
-                <img src="../assets/images/btn-share@3x.png" alt="공유" class="w-100">
+                <img src="../assets/images/btn-share@3x.png" alt="공유" style="width: 60px;">
             </b-button>
         </div>
 

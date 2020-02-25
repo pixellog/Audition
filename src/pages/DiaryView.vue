@@ -28,18 +28,18 @@
             </div>
 
             <div class="text-right mt-2">
-                <b-button variant="outline-danger" size="sm" pill class="bg-white ml-auto mr-2">
-                    <b-icon icon="star-fill"></b-icon>
-                    254
+                <b-button variant="outline-danger" size="sm" pill class="py-0 ml-auto mr-2">
+                    <i class="icon icon-like p-1 mr-1"></i>
+                    <small>254</small>
                 </b-button>
-                <b-button variant="outline-primary" size="sm" pill class="bg-white">
-                    <b-icon icon="star-fill"></b-icon>
-                    18
+                <b-button variant="outline-primary" size="sm" pill class="py-0">
+                    <i class="icon icon-hate p-1 mr-1"></i>
+                    <small>18</small>
                 </b-button>
             </div>
 
-            <div class="border-top border-bottom p-3 mt-4">
-                <b-icon icon="chat-fill" variant="light" scale="2" class="bg-dark mr-1 rounded-circle p-1"></b-icon>
+            <div class="border-top border-bottom py-3 mt-4">
+                <i class="icon icon-reply-fill p-2 mr-1"></i>
                 댓글 31개
             </div>
 

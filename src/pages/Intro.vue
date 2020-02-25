@@ -10,7 +10,7 @@
             <b-button variant="light" size="xl" block pill class="mx-auto" style="margin-top: 8rem;">둘러보기</b-button>
 
             <div class="mt-2 text-center">
-                <b-button variant="link" class="text-light">회원가입</b-button>
+                <b-button variant="link" class="text-light mr-4">회원가입</b-button>
                 <b-button variant="link" class="text-light">로그인</b-button>
             </div>
 

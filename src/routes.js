@@ -57,7 +57,6 @@ export default [
   { title: 'Heart', path: '/heart', component: Heart },
   { title: 'Photo-작업중', path: '/photo', component: Photo },
 
-
   { title: 'My Info', path: '/myinfo', component: MyInfo },
   { title: 'Open Talk', path: '/opentalk', component: OpenTalk },
 
