@@ -5,8 +5,9 @@
         <div class="flex-grow-1">
             <div class="bg-dark text-white text-center p-3 font-weight-bold">Photo</div>
             <div class="mt-5 photo-gallery">
-                <!-- https://github.com/RobinCK/vue-gallery#readme -->
                 <gallery :images="images" :index="index" @close="index = null">
+                    <!-- https://github.com/RobinCK/vue-gallery#readme -->
+                    <!-- todo : 클릭시 이미지 카운팅 임시 처리, 스와이프시 구현도 하셔야합니다. -->
                     <b-icon @click="index = index == 0 ? images.length-1 : index-1 " slot="prev" icon="chevron-left" font-scale=".5"></b-icon>
                     <b-icon @click="index = index<images.length-1 ? index+1 :0" slot="next" icon="chevron-right" font-scale=".5"></b-icon>
                     <div slot="close">
@@ -19,8 +20,9 @@
                         <b-button squared class="image" @click="index = imageIndex"
                                   :style="{ backgroundImage: 'url(' + image + ')'}"></b-button>
                     </div>
+                    <!-- todo : 기본 16개 나열하고 빈이미지일 경우 아래 코드 출력-->
                     <div class="col-3 p-1" v-for="i in blankImages-images.length" :key="i">
-                        <b-button :class="{active : i == 1}" squared class="image">
+                        <b-button squared class="image">
                             <b-icon icon="plus" scale="3" variant="primary"></b-icon>
                         </b-button>
                     </div>
