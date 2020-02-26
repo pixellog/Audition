@@ -14,7 +14,7 @@
 
         <h4 class="text-center mt-4 mb-5">오디션 대회 타이틀 타이틀 타이틀</h4>
 
-        <VueSlickCarousel v-bind="settings">
+        <VueSlickCarousel v-bind="settings" class="position-relative">
             <div v-for="i in 5" v-bind:key="i">
                 <div class="card rounded border-0 shadow-lg p-2 mx-2 mb-5">
                     <img class="d-block img-fluid w-100 rounded"
