@@ -43,6 +43,13 @@
   }
 }
 
+.modal-header button.close {
+  font-weight: lighter;
+  font-size: 3rem;
+  line-height: 1;
+  opacity: 1;
+}
+
 
 // form
 .rounded {
@@ -76,4 +83,13 @@
 
 .custom-radio .custom-control-label::before {
   background-color: #fff;
+}
+
+// checkbox
+.custom-control-label::before {
+  background-color: #fff;
+}
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+  background-color: $danger;
+  border-radius: 3px;
 }

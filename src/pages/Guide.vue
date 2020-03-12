@@ -30,10 +30,15 @@
 
         <div>
             <Intro/>
-            <IntroJoin/>
             <Login/>
             <Join/>
+            <Privacy/>
+            <IntroJoin/>
             <ProfilePhoto/>
+            <FindID/>
+            <FindIDResult/>
+            <FindPW/>
+            <FindPWResult/>
         </div>
 
         <div>
@@ -89,10 +94,20 @@
     import DiaryReply from "@/pages/DiaryReply";
     import MyInfo from "@/pages/MyInfo";
     import OpenTalk from "@/pages/OpenTalk";
+    import Privacy from "@/pages/Privacy";
+    import FindID from "@/pages/FindID";
+    import FindIDResult from "@/pages/FindIDResult";
+    import FindPW from "@/pages/FindPW";
+    import FindPWResult from "@/pages/FindPWResult";
 
     export default {
         name: 'Guide',
         components: {
+            FindPW,
+            FindPWResult,
+            FindID,
+            FindIDResult,
+            Privacy,
             OpenTalk,
             MyInfo,
             DiaryReply,

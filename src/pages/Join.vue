@@ -19,7 +19,7 @@
             </ul>
 
             <b-row class="mt-3">
-                <b-button variant="dark" class="py-3" pill block>이메일 인증하기</b-button>
+                <b-button variant="dark" class="rounded" block @click="isAlert(case1)">이메일 인증하기</b-button>
             </b-row>
 
 
@@ -42,7 +42,7 @@
             <b-form-checkbox-group stacked id="" v-model="terms" name="" class="mt-3">
                 <b-form-checkbox :value="index" v-for="(item,index) in termsOptions" v-bind:key="item">
                     {{item}}
-                    <b-button variant="link" class="text-danger p-0 ml-auto" @click="isTerms">보기</b-button>
+                    <b-button variant="link" class="text-danger p-0 ml-auto" :to="index==0 ? '/terms/service' : '/terms/privacy'">보기</b-button>
                 </b-form-checkbox>
             </b-form-checkbox-group>
 
@@ -68,7 +68,7 @@
                         <b-input class="col border-0 text-right" placeholder="닉네임을 입력해주세요"/>
                     </b-row>
                 </div>
-                <b-button variant="dark" class="col-auto rounded">중복확인</b-button>
+                <b-button variant="dark" class="col-auto py-0 rounded">중복확인</b-button>
             </b-row>
 
             <b-row class="bg-white rounded mt-3">
@@ -98,11 +98,28 @@
                 termsOptions: Object.assign({}, ['서비스 이용약관 동의', '개인정보보호정책 동의']),
                 genderOptions: Object.assign({}, ['남', '여']),
                 countyOptions: Object.assign({}, ['국가번호']),
+                case1 : '이메일로 인증번호가 전송되었습니다.\n 전송된 번호를 적어주세요',
+                case2 : '입력하신 번호로 인증번호가 전송되었습니다.\n 전송된 번호를 적어주세요',
+                case3 : '인증번호가 틀렸습니다.\n 다시 한번 입력해주세요.',
+                case4 : '회원가입이 완료되었습니다.',
             }
         },
+        beforeMount() {
+            // this.isAlert(this.case1);
+        },
         methods: {
-            isTerms() {
-                //
+            isAlert(x) {
+                // https://bootstrap-vue.js.org/docs/components/modal
+                this.$bvModal
+                    .msgBoxConfirm(x, {
+                        centered: true,
+                        footerClass: 'd-none',
+                        headerClass:'border-0 py-0 pr-3',
+                        headerBgVariant:'light',
+                        headerTextVariant:'secondary',
+                        hideHeaderClose: false,
+                        title: ' ',
+                    })
             }
         }
     }

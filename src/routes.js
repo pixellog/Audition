@@ -25,6 +25,12 @@ import Reward from "./pages/Reward";
 import Setting from "./pages/Setting";
 import Qna from "./pages/Qna";
 import Photo from "@/pages/Photo";
+import Privacy from "@/pages/Privacy";
+import FindID from "@/pages/FindID";
+import FindIDResult from "@/pages/FindIDResult";
+import FindPW from "@/pages/FindPW";
+import FindPWResult from "@/pages/FindPWResult";
+import TermsService from "@/pages/TermsService";
 
 export default [
   { title: '메인', path: '/', component: Main },
@@ -37,7 +43,13 @@ export default [
 
   { title: '로그인', path: '/login', component: Login },
   { title: '회원가입', path: '/join', component: Join },
+  { title: '서비스 이용약관', path: '/terms/service', component: TermsService },
+  { title: '개인정보취급방침', path: '/terms/privacy', component: Privacy },
   { title: '회원가입/대표사진 등록', path: '/join/photo', component: ProfilePhoto },
+  { title: '아이디 찾기', path: '/find-id', component: FindID },
+  { title: '아이디 찾기 결과', path: '/find-id-result', component: FindIDResult },
+  { title: '비밀번호 찾기', path: '/find-pw', component: FindPW },
+  { title: '비밀번호 찾기 결과', path: '/find-pw-result', component: FindPWResult },
   { title: '인트로', path: '/intro', component: Intro },
   { title: '인트로/회원가입후', path: '/intro/join', component: IntroJoin },
 
